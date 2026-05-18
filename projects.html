@@ -13,21 +13,18 @@
 <nav class="nav">
   <a href="index.html" class="nav-logo">KB<span>.</span></a>
   <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
-<ul class="nav-links" id="nav-links">
-  <li><a href="index.html">Home</a></li>
-  <li><a href="about.html">About</a></li>
-  <li><a href="projects.html">Projects</a></li>
-  <li><a href="contact.html">Contact</a></li>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="projects.html" class="active">Projects</a></li>
+    <li><a href="contact.html">Contact</a></li>
     <li><a href="cv.html">CV / Resume</a></li>      
-</ul>
+  </ul>
 </nav>
-
 
 <div class="page">
 
-<!-- ═══════════════════════════════════════════════
-     SECTION HEADER
-═══════════════════════════════════════════════ -->
+<!-- SECTION HEADER -->
 <section style="padding:5rem 6% 2rem">
   <div class="container fade-up" style="text-align:center">
     <p class="section-label">◈ My Work</p>
@@ -40,9 +37,7 @@
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════════
-     KEN BURNS CAROUSEL — Personal Projects
-═══════════════════════════════════════════════ -->
+<!-- KEN BURNS CAROUSEL — Personal Projects (UPDATED) -->
 <section style="padding:2rem 6% 5rem">
   <div class="container">
     <p class="section-label">◈ Featured</p>
@@ -50,17 +45,12 @@
     <div class="section-rule"></div>
 
     <div class="carousel-wrap fade-up">
-
-      <!-- Arrow Controls -->
       <button class="carousel-prev" aria-label="Previous slide">&#8592;</button>
       <button class="carousel-next" aria-label="Next slide">&#8594;</button>
 
-      <!-- Slides Track -->
       <div class="carousel-track">
 
-        <!-- ── SLIDE 1: KYUN AI Robotic Arm ──────────────────
-             REPLACE IMAGE: change the background-image in .slide-bg
-             to url('img/project-robot.jpg') or any image URL         -->
+        <!-- SLIDE 1: KYUN AI Robotic Arm -->
         <div class="carousel-slide">
           <div class="slide-bg" style="background:linear-gradient(135deg,#0d1a15 0%,#1a2a20 40%,#0a1208 100%)">
             <div class="slide-bg-overlay"></div>
@@ -86,8 +76,7 @@
           </div>
         </div>
 
-        <!-- ── SLIDE 2: Safety House IoT with Telegram Bot ─────────────────────
-             REPLACE IMAGE: background-image: url('img/project-safety.jpg') -->
+        <!-- SLIDE 2: Safety House IoT with Telegram Bot -->
         <div class="carousel-slide">
           <div class="slide-bg" style="background:linear-gradient(135deg,#1a0d08 0%,#2a1510 40%,#120808 100%)">
             <div class="slide-bg-overlay"></div>
@@ -112,8 +101,7 @@
           </div>
         </div>
 
-        <!-- ── SLIDE 3: Cane for the Blind With GPS Feature ───────────────────
-             REPLACE IMAGE: background-image: url('img/project-cane.jpg') -->
+        <!-- SLIDE 3: Smart Cane with GPS -->
         <div class="carousel-slide">
           <div class="slide-bg" style="background:linear-gradient(135deg,#0a0e1a 0%,#0d1628 40%,#080a14 100%)">
             <div class="slide-bg-overlay"></div>
@@ -139,8 +127,7 @@
           </div>
         </div>
 
-        <!-- ── SLIDE 4: Automated Watering System ────────────────────────
-             REPLACE IMAGE: background-image: url('img/project-farm.jpg') -->
+        <!-- SLIDE 4: Automated Farm Irrigation -->
         <div class="carousel-slide">
           <div class="slide-bg" style="background:linear-gradient(135deg,#0a1a0a 0%,#0d2010 40%,#081408 100%)">
             <div class="slide-bg-overlay"></div>
@@ -165,8 +152,7 @@
           </div>
         </div>
 
-        <!-- ── SLIDE 5: Custom Power Supply with Potentiometer ──────────────────
-             REPLACE IMAGE: background-image: url('img/project-psu.jpg') -->
+        <!-- SLIDE 5: DIY Power Supply -->
         <div class="carousel-slide">
           <div class="slide-bg" style="background:linear-gradient(135deg,#1a140a 0%,#221a08 40%,#140e04 100%)">
             <div class="slide-bg-overlay"></div>
@@ -190,33 +176,77 @@
           </div>
         </div>
 
+        <!-- NEW SLIDE 6: 3D Projects (Smart Trashcan, Nameplate, Balancing Gambot Hand, etc.) -->
+        <div class="carousel-slide">
+          <div class="slide-bg" style="background:linear-gradient(135deg,#1a1a2e 0%,#16213e 40%,#0f0f1a 100%)">
+            <div class="slide-bg-overlay"></div>
+          </div>
+          <div class="slide-content">
+            <div class="slide-label">Project 06</div>
+            <h2 class="slide-title">3D Modeling & Design</h2>
+            <p class="slide-desc">
+              A collection of 3D models created for thesis commissions and personal projects:
+              Smart Trashcan (SolidWorks), Solar Phone Charging Station, Custom Nameplates,
+              Balancing Gambot Hand Mechanism, and various mechanical layouts ready for fabrication.
+            </p>
+            <div class="tags" style="margin-bottom:1.5rem">
+              <span class="tag">SolidWorks</span>
+              <span class="tag">Blender</span>
+              <span class="tag">3D Modeling</span>
+              <span class="tag">Mechanical Design</span>
+              <span class="tag">Fabrication Ready</span>
+            </div>
+            <a href="https://github.com/ikheent" target="_blank" class="btn btn-primary slide-btn">View on GitHub →</a>
+          </div>
+        </div>
+
+        <!-- NEW SLIDE 7: Schematic Diagrams & PCB Layouts -->
+        <div class="carousel-slide">
+          <div class="slide-bg" style="background:linear-gradient(135deg,#0f172a 0%,#1e293b 40%,#0a0f1a 100%)">
+            <div class="slide-bg-overlay"></div>
+          </div>
+          <div class="slide-content">
+            <div class="slide-label">Project 07</div>
+            <h2 class="slide-title">PCB Layouts & Custom Sensors</h2>
+            <p class="slide-desc">
+              Complete schematic design and PCB layout for all projects and commissions.
+              Includes custom-designed water level sensor, automatic trigger circuit for water pumps,
+              relay protection modules, and optimized board layouts using KiCad and EasyEDA.
+            </p>
+            <div class="tags" style="margin-bottom:1.5rem">
+              <span class="tag">KiCad</span>
+              <span class="tag">EasyEDA</span>
+              <span class="tag">PCB Layout</span>
+              <span class="tag">Custom Sensor</span>
+              <span class="tag">Auto Water Pump Trigger</span>
+              <span class="tag">Schematic Design</span>
+            </div>
+            <a href="https://github.com/ikheent" target="_blank" class="btn btn-primary slide-btn">View on GitHub →</a>
+          </div>
+        </div>
+
       </div><!-- end carousel-track -->
 
-      <!-- Dot Indicators -->
       <div class="carousel-dots"></div>
     </div><!-- end carousel-wrap -->
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════════
-     THESIS COMMISSIONS GRID
-═══════════════════════════════════════════════ -->
+<!-- THESIS COMMISSIONS GRID (UPDATED - Safety House moved to slot 5) -->
 <section style="background:var(--panel);border-top:1px solid var(--border)">
   <div class="container">
     <p class="section-label">◈ Thesis Commissions</p>
     <h2 class="section-title">Built for Other Universities</h2>
     <div class="section-rule"></div>
     <p style="color:var(--text-dim);max-width:600px;margin-bottom:3rem;font-size:.88rem;line-height:1.8">
-      These systems were fully commissioned and built for BS Education and Engineering thesis
-      students from CHMSU, John B. Lacson, and Philippine Normal University Visayas.
+      These systems were fully commissioned and built under tight deadlines — while balancing a dancing career, being a student assistant,  maintaining DOST-SEI scholarship and Dean's List standing, and pursuing online certifications outside of my BS CpE curriculum. Every project delivered, no shortcuts taken. <br> (Final output image & Papers can't be display due to Agreement)
     </p>
 
     <div class="thesis-grid fade-up">
 
-      <!-- Commission 1 -->
+      <!-- Commission 1: Rice Fodder Machine -->
       <div class="card card-shimmer thesis-card">
-        <!-- REPLACE: swap .img-placeholder with <img src="img/thesis-1.jpg" alt="Rice Fodder Machine"> -->
-        <div class="img-placeholder">📷 Add project photo here</div>
+        <img src="img/rice.jpg" alt="Rice Fodder Machine">
         <div class="thesis-num">Commission 01</div>
         <h3 class="thesis-title">Automated Rice Fodder Machine</h3>
         <p class="thesis-desc">
@@ -235,9 +265,9 @@
         </div>
       </div>
 
-      <!-- Commission 2 -->
+      <!-- Commission 2: Sulfur Detector -->
       <div class="card card-shimmer thesis-card">
-        <div class="img-placeholder">📷 Add project photo here</div>
+        <img src="img/sim.jpg" alt="sim mod sulf">
         <div class="thesis-num">Commission 02</div>
         <h3 class="thesis-title">Automated Sulfur Detector with SMS Alerts</h3>
         <p class="thesis-desc">
@@ -255,9 +285,9 @@
         </div>
       </div>
 
-      <!-- Commission 3 -->
+      <!-- Commission 3: Smart Cane -->
       <div class="card card-shimmer thesis-card">
-        <div class="img-placeholder">📷 Add project photo here</div>
+        <img src="img/blind.jpg" alt="cane and gps">
         <div class="thesis-num">Commission 03</div>
         <h3 class="thesis-title">Smart Cane for the Visually Impaired</h3>
         <p class="thesis-desc">
@@ -274,9 +304,9 @@
         </div>
       </div>
 
-      <!-- Commission 4 -->
+      <!-- Commission 4: Solar Paddle Wheel -->
       <div class="card card-shimmer thesis-card">
-        <div class="img-placeholder">📷 Add project photo here</div>
+        <img src="img/solar.jpg" alt="solar">
         <div class="thesis-num">Commission 04</div>
         <h3 class="thesis-title">Solar Paddle Wheel Water Quality Monitor</h3>
         <p class="thesis-desc">
@@ -294,26 +324,31 @@
         </div>
       </div>
 
-      <!-- Commission 5 -->
+      <!-- Commission 5: Safety House IoT (MOVED HERE from personal projects) -->
       <div class="card card-shimmer thesis-card">
-        <div class="img-placeholder">📷 Add 3D model render here</div>
+        <img src="img/safe.jpg" alt="Safety House IoT">
         <div class="thesis-num">Commission 05</div>
-        <h3 class="thesis-title">Smart Trashcan — 3D Model</h3>
+        <h3 class="thesis-title">Safety House IoT System</h3>
         <p class="thesis-desc">
-          Designed and produced a complete 3D model and mechanical layout for a smart trashcan
-          thesis project for John B. Lacson College. Used SolidWorks for precision modeling and
-          layout design ready for fabrication.
+          A comprehensive home safety system commissioned for thesis. Detects smoke, fire, 
+          dangerous air quality, and intruders. Integrated with ESP32 web server for remote 
+          monitoring. Automated Telegram bot sends real-time alerts using Telegram API.
         </p>
         <div class="tags">
-          <span class="tag">SolidWorks</span>
-          <span class="tag">3D Modeling</span>
-          <span class="tag">JBL Commission</span>
+          <span class="tag">ESP32</span>
+          <span class="tag">Telegram API</span>
+          <span class="tag">IoT</span>
+          <span class="tag">Smoke/Gas Sensors</span>
+          <span class="tag">PIR Sensor</span>
+          <span class="tag">WebServer</span>
         </div>
       </div>
 
-      <!-- Commission 6 -->
+ 
+
+      <!-- Commission 7: Solar Phone Charging Station -->
       <div class="card card-shimmer thesis-card">
-        <div class="img-placeholder">📷 Add 3D model render here</div>
+        <img src="img/charge.jpg" alt="Solar Charging Station">
         <div class="thesis-num">Commission 06</div>
         <h3 class="thesis-title">Solar-Powered Phone Charging Station — 3D Model</h3>
         <p class="thesis-desc">
@@ -337,13 +372,13 @@
 
 <footer>
   <p>© 2026 Khent Benedict Balulot · <a href="https://github.com/khentdoit" target="_blank">github.com/khentdoit</a></p>
-<nav class="footer-links">
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="projects.html">Projects</a>
-  <a href="contact.html">Contact</a>
-  <a href="cv.html">CV - Resume</a>   
-</nav>
+  <nav class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+    <a href="cv.html">CV - Resume</a>   
+  </nav>
 </footer>
 
 <button class="chat-toggle" id="chat-toggle" aria-label="Open chat">💬<span class="chat-badge" id="chat-badge"></span></button>
@@ -366,7 +401,7 @@
 <script src="js/chatbot.js"></script>
 
 <style>
-/* ── Carousel ───────────────────────────────────────────── */
+/* Carousel Styles */
 .carousel-wrap {
   position: relative;
   border-radius: var(--radius);
@@ -430,7 +465,6 @@
 }
 .slide-btn { font-size:.75rem; padding:.65rem 1.6rem; }
 
-/* Arrows */
 .carousel-prev, .carousel-next {
   position: absolute;
   top: 50%; transform: translateY(-50%);
@@ -450,7 +484,6 @@
 .carousel-next { right: 1rem; }
 .carousel-prev:hover, .carousel-next:hover { background: var(--copper); border-color: var(--copper); }
 
-/* Dots */
 .carousel-dots {
   position: absolute;
   bottom: 1.2rem; left: 50%;
@@ -470,13 +503,20 @@
   transform: scale(1.3);
 }
 
-/* Thesis grid */
 .thesis-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 1.8rem;
 }
 .thesis-card { padding: 1.8rem; }
+.thesis-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  border: 1px solid var(--border);
+}
 .thesis-num {
   font-family: var(--mono);
   font-size: .68rem;
