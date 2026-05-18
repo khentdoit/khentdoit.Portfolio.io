@@ -1,0 +1,196 @@
+/* ================================================================
+   ANIMATIONS.CSS — Page Transitions, Ken Burns, Hover FX
+   ================================================================ */
+
+/* ── Page Fade Transition ────────────────────────────────── */
+.page-transition-overlay {
+  position: fixed;
+  inset: 0;
+  background: var(--bg);
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+.page-transition-overlay.fade-in  { opacity: 1; pointer-events: all; }
+.page-transition-overlay.fade-out { opacity: 0; }
+
+/* Content fade on load */
+.fade-up {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.65s ease, transform 0.65s ease;
+}
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── Typewriter Cursor ───────────────────────────────────── */
+.typewriter-cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1em;
+  background: var(--copper);
+  margin-left: 3px;
+  vertical-align: middle;
+  animation: blink 0.85s step-end infinite;
+}
+@keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+
+/* ── Ken Burns (carousel background) ────────────────────── */
+@keyframes kenburns-zoom-in {
+  0%   { transform: scale(1)    translateX(0)      translateY(0); }
+  100% { transform: scale(1.12) translateX(-2%)    translateY(-1.5%); }
+}
+@keyframes kenburns-zoom-out {
+  0%   { transform: scale(1.1)  translateX(-2%)    translateY(-1%); }
+  100% { transform: scale(1)    translateX(0)      translateY(0); }
+}
+@keyframes kenburns-pan-right {
+  0%   { transform: scale(1.08) translateX(-3%)    translateY(0); }
+  100% { transform: scale(1.08) translateX(2%)     translateY(-1%); }
+}
+
+.slide-bg.kb-zoom-in  { animation: kenburns-zoom-in  8s ease-in-out forwards; }
+.slide-bg.kb-zoom-out { animation: kenburns-zoom-out 8s ease-in-out forwards; }
+.slide-bg.kb-pan      { animation: kenburns-pan-right 8s ease-in-out forwards; }
+
+/* ── Carousel Slide Transition ───────────────────────────── */
+.carousel-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+  pointer-events: none;
+}
+.carousel-slide.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+/* ── Floating Particles Canvas ───────────────────────────── */
+#particles-canvas {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* ── Hero Glow Orbs ──────────────────────────────────────── */
+.hero-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
+  animation: orb-drift 12s ease-in-out infinite alternate;
+}
+.hero-orb-1 {
+  width: 500px; height: 500px;
+  top: -100px; right: -100px;
+  background: radial-gradient(circle, rgba(173,110,84,0.12), transparent 70%);
+}
+.hero-orb-2 {
+  width: 400px; height: 400px;
+  bottom: 0; left: 0;
+  background: radial-gradient(circle, rgba(238,197,160,0.07), transparent 70%);
+  animation-delay: -6s;
+}
+@keyframes orb-drift {
+  0%   { transform: translate(0, 0) scale(1); }
+  100% { transform: translate(30px, -20px) scale(1.1); }
+}
+
+/* ── Scroll Indicator ────────────────────────────────────── */
+.scroll-indicator {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  color: var(--text-dim);
+  letter-spacing: 0.2em;
+  animation: scroll-bounce 2.5s ease-in-out infinite;
+}
+.scroll-indicator::after {
+  content: '';
+  width: 1px;
+  height: 40px;
+  background: linear-gradient(to bottom, var(--copper), transparent);
+}
+@keyframes scroll-bounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50%       { transform: translateX(-50%) translateY(8px); }
+}
+
+/* ── Achievement / Award Badge Pulse ────────────────────── */
+.badge-pulse {
+  display: inline-block;
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  background: var(--copper);
+  box-shadow: 0 0 0 0 rgba(173,110,84,0.5);
+  animation: badge-ring 2s ease infinite;
+}
+@keyframes badge-ring {
+  0%   { box-shadow: 0 0 0 0   rgba(173,110,84,0.5); }
+  70%  { box-shadow: 0 0 0 12px rgba(173,110,84,0); }
+  100% { box-shadow: 0 0 0 0   rgba(173,110,84,0); }
+}
+
+/* ── Hover shimmer on cards ──────────────────────────────── */
+.card-shimmer {
+  position: relative;
+  overflow: hidden;
+}
+.card-shimmer::after {
+  content: '';
+  position: absolute;
+  top: -50%; left: -60%;
+  width: 40%; height: 200%;
+  background: linear-gradient(90deg, transparent, rgba(238,197,160,0.06), transparent);
+  transform: skewX(-20deg);
+  transition: left 0.6s ease;
+  pointer-events: none;
+}
+.card-shimmer:hover::after { left: 120%; }
+
+/* ── QR Code glow ────────────────────────────────────────── */
+.qr-wrap {
+  display: inline-block;
+  padding: 1.2rem;
+  background: var(--panel-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  transition: box-shadow 0.3s;
+}
+.qr-wrap:hover {
+  box-shadow: 0 0 40px rgba(173,110,84,0.25);
+  border-color: var(--copper);
+}
+
+/* ── Social Icon Hover ───────────────────────────────────── */
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px; height: 46px;
+  border-radius: 50%;
+  background: var(--panel-2);
+  border: 1px solid var(--border);
+  color: var(--text-dim);
+  font-size: 1rem;
+  transition: all 0.3s;
+}
+.social-icon:hover {
+  background: var(--copper);
+  border-color: var(--copper);
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(173,110,84,0.35);
+}

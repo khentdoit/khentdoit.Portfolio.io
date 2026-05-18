@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Khent Benedict Balulot</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/chatbot.css">
+</head>
+<body>
+
+<nav class="nav">
+  <a href="index.html" class="nav-logo">KB<span>.</span></a>
+  <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+<ul class="nav-links" id="nav-links">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="about.html">About</a></li>
+  <li><a href="projects.html">Projects</a></li>
+  <li><a href="contact.html">Contact</a></li>
+    <li><a href="cv.html">CV / Resume</a></li>      
+</ul>
+</nav>
+
+
+<div class="page">
+
+<!-- ═══════════════════════════════════════════════
+     SECTION HEADER
+═══════════════════════════════════════════════ -->
+<section style="padding:5rem 6% 2rem">
+  <div class="container fade-up" style="text-align:center">
+    <p class="section-label">◈ My Work</p>
+    <h1 class="section-title">Projects &amp; Builds</h1>
+    <div class="section-rule" style="margin:0 auto 1rem"></div>
+    <p style="color:var(--text-dim);max-width:560px;margin:0 auto;font-size:.92rem">
+      Every build below was self-driven and hands-on — hardware design,
+      firmware, web dashboards, and everything in between.
+    </p>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     KEN BURNS CAROUSEL — Personal Projects
+═══════════════════════════════════════════════ -->
+<section style="padding:2rem 6% 5rem">
+  <div class="container">
+    <p class="section-label">◈ Featured</p>
+    <h2 class="section-title" style="font-size:1.8rem;margin-bottom:.5rem">Personal Projects</h2>
+    <div class="section-rule"></div>
+
+    <div class="carousel-wrap fade-up">
+
+      <!-- Arrow Controls -->
+      <button class="carousel-prev" aria-label="Previous slide">&#8592;</button>
+      <button class="carousel-next" aria-label="Next slide">&#8594;</button>
+
+      <!-- Slides Track -->
+      <div class="carousel-track">
+
+        <!-- ── SLIDE 1: KYUN AI Robotic Arm ──────────────────
+             REPLACE IMAGE: change the background-image in .slide-bg
+             to url('img/project-robot.jpg') or any image URL         -->
+        <div class="carousel-slide">
+          <div class="slide-bg" style="background:linear-gradient(135deg,#0d1a15 0%,#1a2a20 40%,#0a1208 100%)">
+            <div class="slide-bg-overlay"></div>
+          </div>
+          <div class="slide-content">
+            <div class="slide-label">Project 01</div>
+            <h2 class="slide-title">KYUN AI — 6-Axis Robotic Arm</h2>
+            <p class="slide-desc">
+              A voice-controlled robotic arm with 6 degrees of freedom, built on a LattePanda V2
+              (single-board computer). Features an offline voice AI, real-time web dashboard with
+              joystick servo control, AI chatbot integration, and is actively being trained with
+              machine learning for gesture recognition.
+            </p>
+            <div class="tags" style="margin-bottom:1.5rem">
+              <span class="tag">ESP32</span>
+              <span class="tag">LattePanda V2</span>
+              <span class="tag">Python</span>
+              <span class="tag">Voice AI</span>
+              <span class="tag">MG996R Servos</span>
+              <span class="tag">WebServer</span>
+            </div>
+            <a href="https://github.com/ikheent" target="_blank" class="btn btn-primary slide-btn">View on GitHub →</a>
+          </div>
+        </div>
+
+        <!-- ── SLIDE 2: Safety House IoT with Telegram Bot ─────────────────────
+             REPLACE IMAGE: background-image: url('img/project-safety.jpg') -->
+        <div class="carousel-slide">
+          <div class="slide-bg" style="background:linear-gradient(135deg,#1a0d08 0%,#2a1510 40%,#120808 100%)">
+            <div class="slide-bg-overlay"></div>
+          </div>
+          <div class="slide-content">
+            <div class="slide-label">Project 02</div>
+            <h2 class="slide-title">Safety House IoT System</h2>
+            <p class="slide-desc">
+              A home safety system that detects smoke, fire, dangerous air quality, and intruders.
+              Integrated with an ESP32 web server for remote monitoring via mobile or laptop.
+              Automated Telegram bot sends real-time alerts and notifications using the Telegram API.
+            </p>
+            <div class="tags" style="margin-bottom:1.5rem">
+              <span class="tag">ESP32</span>
+              <span class="tag">Telegram API</span>
+              <span class="tag">IoT</span>
+              <span class="tag">Smoke / Gas Sensors</span>
+              <span class="tag">PIR Sensor</span>
+              <span class="tag">WebServer</span>
+            </div>
+            <a href="https://github.com/ikheent" target="_blank" class="btn btn-primary slide-btn">View on GitHub →</a>
+          </div>
+        </div>
+
+        <!-- ── SLIDE 3: Cane for the Blind With GPS Feature ───────────────────
+             REPLACE IMAGE: background-image: url('img/project-cane.jpg') -->
+        <div class="carousel-slide">
+          <div class="slide-bg" style="background:linear-gradient(135deg,#0a0e1a 0%,#0d1628 40%,#080a14 100%)">
+            <div class="slide-bg-overlay"></div>
+          </div>
+          <div class="slide-content">
+            <div class="slide-label">Project 03</div>
+            <h2 class="slide-title">Smart Cane for the Visually Impaired</h2>
+            <p class="slide-desc">
+              A cane with ultrasonic obstacle detection, ground water detection, and a wrist-mounted
+              long-range buzzer button. Built on a dual-ESP32 architecture: an ESP32 Dev Module
+              powers the cane sensors, while an ESP32-C3 slave runs a web server with GPS tracking
+              and communicates wirelessly via ESP-NOW.
+            </p>
+            <div class="tags" style="margin-bottom:1.5rem">
+              <span class="tag">ESP32</span>
+              <span class="tag">ESP32-C3</span>
+              <span class="tag">ESP-NOW</span>
+              <span class="tag">GPS</span>
+              <span class="tag">Ultrasonic</span>
+              <span class="tag">WebServer</span>
+            </div>
+            <a href="https://github.com/ikheent" target="_blank" class="btn btn-primary slide-btn">View on GitHub →</a>
+          </div>
+        </div>
+
+        <!-- ── SLIDE 4: Automated Watering System ────────────────────────
+             REPLACE IMAGE: background-image: url('img/project-farm.jpg') -->
+        <div class="carousel-slide">
+          <div class="slide-bg" style="background:linear-gradient(135deg,#0a1a0a 0%,#0d2010 40%,#081408 100%)">
+            <div class="slide-bg-overlay"></div>
+          </div>
+          <div class="slide-content">
+            <div class="slide-label">Project 04</div>
+            <h2 class="slide-title">Automated Farm Irrigation System</h2>
+            <p class="slide-desc">
+              An intelligent agricultural system that waters plants automatically based on real-time
+              data from soil moisture sensors, humidity sensors, and heat sensors. Fully automated
+              with threshold-based logic — no manual intervention required.
+            </p>
+            <div class="tags" style="margin-bottom:1.5rem">
+              <span class="tag">ESP32</span>
+              <span class="tag">Soil Sensor</span>
+              <span class="tag">DHT Sensor</span>
+              <span class="tag">Relay Module</span>
+              <span class="tag">Automation</span>
+              <span class="tag">IoT</span>
+            </div>
+            <a href="https://github.com/ikheent" target="_blank" class="btn btn-primary slide-btn">View on GitHub →</a>
+          </div>
+        </div>
+
+        <!-- ── SLIDE 5: Custom Power Supply with Potentiometer ──────────────────
+             REPLACE IMAGE: background-image: url('img/project-psu.jpg') -->
+        <div class="carousel-slide">
+          <div class="slide-bg" style="background:linear-gradient(135deg,#1a140a 0%,#221a08 40%,#140e04 100%)">
+            <div class="slide-bg-overlay"></div>
+          </div>
+          <div class="slide-content">
+            <div class="slide-label">Project 05</div>
+            <h2 class="slide-title">DIY 5V / 3A Linear Power Supply</h2>
+            <p class="slide-desc">
+              A custom-built regulated power supply constructed entirely from discrete components:
+              transformer, rectifier diodes, filter capacitors, and a voltage divider network.
+              Outputs a stable 5V at 3A — used to power project prototypes and ESP32 circuits.
+            </p>
+            <div class="tags" style="margin-bottom:1.5rem">
+              <span class="tag">Electronics</span>
+              <span class="tag">Transformer</span>
+              <span class="tag">Voltage Regulator</span>
+              <span class="tag">From Scratch</span>
+              <span class="tag">5V / 3A</span>
+            </div>
+            <a href="https://github.com/ikheent" target="_blank" class="btn btn-primary slide-btn">View on GitHub →</a>
+          </div>
+        </div>
+
+      </div><!-- end carousel-track -->
+
+      <!-- Dot Indicators -->
+      <div class="carousel-dots"></div>
+    </div><!-- end carousel-wrap -->
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     THESIS COMMISSIONS GRID
+═══════════════════════════════════════════════ -->
+<section style="background:var(--panel);border-top:1px solid var(--border)">
+  <div class="container">
+    <p class="section-label">◈ Thesis Commissions</p>
+    <h2 class="section-title">Built for Other Universities</h2>
+    <div class="section-rule"></div>
+    <p style="color:var(--text-dim);max-width:600px;margin-bottom:3rem;font-size:.88rem;line-height:1.8">
+      These systems were fully commissioned and built for BS Education and Engineering thesis
+      students from CHMSU, John B. Lacson, and Philippine Normal University Visayas.
+    </p>
+
+    <div class="thesis-grid fade-up">
+
+      <!-- Commission 1 -->
+      <div class="card card-shimmer thesis-card">
+        <!-- REPLACE: swap .img-placeholder with <img src="img/thesis-1.jpg" alt="Rice Fodder Machine"> -->
+        <div class="img-placeholder">📷 Add project photo here</div>
+        <div class="thesis-num">Commission 01</div>
+        <h3 class="thesis-title">Automated Rice Fodder Machine</h3>
+        <p class="thesis-desc">
+          Full hardware design, prototype, and final build of an automated rice fodder system.
+          Arduino-based control logic driven by temperature/moisture sensors and water level
+          sensors to trigger output loads. Engineered a diode-capacitor solution to eliminate
+          relay voltage spikes that disrupted the Arduino — a problem even commercial relay
+          modules failed to prevent.
+        </p>
+        <div class="tags">
+          <span class="tag">Arduino</span>
+          <span class="tag">Temp/Moisture Sensor</span>
+          <span class="tag">Water Level Sensor</span>
+          <span class="tag">Relay Module</span>
+          <span class="tag">Spike Protection</span>
+        </div>
+      </div>
+
+      <!-- Commission 2 -->
+      <div class="card card-shimmer thesis-card">
+        <div class="img-placeholder">📷 Add project photo here</div>
+        <div class="thesis-num">Commission 02</div>
+        <h3 class="thesis-title">Automated Sulfur Detector with SMS Alerts</h3>
+        <p class="thesis-desc">
+          Ensured reliable sulfur gas detection with calibrated sensor output. Designed a voltage
+          divider circuit for the SIM800L V2 input signal. Built a complete 5V/3A power supply
+          from scratch using a transformer, capacitors, diodes, and voltage divider — powering
+          the entire system safely.
+        </p>
+        <div class="tags">
+          <span class="tag">Gas Sensor</span>
+          <span class="tag">SIM800L</span>
+          <span class="tag">SMS Alert</span>
+          <span class="tag">Custom PSU</span>
+          <span class="tag">Voltage Divider</span>
+        </div>
+      </div>
+
+      <!-- Commission 3 -->
+      <div class="card card-shimmer thesis-card">
+        <div class="img-placeholder">📷 Add project photo here</div>
+        <div class="thesis-num">Commission 03</div>
+        <h3 class="thesis-title">Smart Cane for the Visually Impaired</h3>
+        <p class="thesis-desc">
+          Dual ESP32 architecture: ESP32 Dev Module powers all cane sensors and buzzer output
+          (parent device). ESP32-C3 (slave) hosts a web server with live GPS tracking and a
+          wireless wrist button via ESP-NOW — triggering the master buzzer from a distance.
+        </p>
+        <div class="tags">
+          <span class="tag">ESP32</span>
+          <span class="tag">ESP32-C3</span>
+          <span class="tag">ESP-NOW</span>
+          <span class="tag">Ultrasonic</span>
+          <span class="tag">GPS WebServer</span>
+        </div>
+      </div>
+
+      <!-- Commission 4 -->
+      <div class="card card-shimmer thesis-card">
+        <div class="img-placeholder">📷 Add project photo here</div>
+        <div class="thesis-num">Commission 04</div>
+        <h3 class="thesis-title">Solar Paddle Wheel Water Quality Monitor</h3>
+        <p class="thesis-desc">
+          Calibrated a pH sensor and DS3231 RTC module with CMOS precision. Integrated a
+          ZK-MG motor driver, safely regulated a solar panel with a charge controller, and
+          wired a 24V DC motor with a motor governor to a 24V/25Ah battery bank. Applied
+          diode-capacitor relay spike protection throughout.
+        </p>
+        <div class="tags">
+          <span class="tag">Solar Power</span>
+          <span class="tag">pH Sensor</span>
+          <span class="tag">DS3231 RTC</span>
+          <span class="tag">Motor Driver</span>
+          <span class="tag">Battery System</span>
+        </div>
+      </div>
+
+      <!-- Commission 5 -->
+      <div class="card card-shimmer thesis-card">
+        <div class="img-placeholder">📷 Add 3D model render here</div>
+        <div class="thesis-num">Commission 05</div>
+        <h3 class="thesis-title">Smart Trashcan — 3D Model</h3>
+        <p class="thesis-desc">
+          Designed and produced a complete 3D model and mechanical layout for a smart trashcan
+          thesis project for John B. Lacson College. Used SolidWorks for precision modeling and
+          layout design ready for fabrication.
+        </p>
+        <div class="tags">
+          <span class="tag">SolidWorks</span>
+          <span class="tag">3D Modeling</span>
+          <span class="tag">JBL Commission</span>
+        </div>
+      </div>
+
+      <!-- Commission 6 -->
+      <div class="card card-shimmer thesis-card">
+        <div class="img-placeholder">📷 Add 3D model render here</div>
+        <div class="thesis-num">Commission 06</div>
+        <h3 class="thesis-title">Solar-Powered Phone Charging Station — 3D Model</h3>
+        <p class="thesis-desc">
+          Created a detailed 3D model of a solar-powered public phone charging station for a
+          PNU-Visayas thesis. Designed the structural layout, panel mounting, and component
+          housing for a complete, presentation-ready model.
+        </p>
+        <div class="tags">
+          <span class="tag">SolidWorks</span>
+          <span class="tag">3D Modeling</span>
+          <span class="tag">PNU-V Commission</span>
+          <span class="tag">Solar</span>
+        </div>
+      </div>
+
+    </div><!-- end thesis-grid -->
+  </div>
+</section>
+
+</div><!-- end .page -->
+
+<footer>
+  <p>© 2026 Khent Benedict Balulot · <a href="https://github.com/khentdoit" target="_blank">github.com/khentdoit</a></p>
+<nav class="footer-links">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="projects.html">Projects</a>
+  <a href="contact.html">Contact</a>
+  <a href="cv.html">CV - Resume</a>   
+</nav>
+</footer>
+
+<button class="chat-toggle" id="chat-toggle" aria-label="Open chat">💬<span class="chat-badge" id="chat-badge"></span></button>
+<div class="chat-window" id="chat-window">
+  <div class="chat-header">
+    <div class="chat-avatar">🤖</div>
+    <div class="chat-header-info"><h4>KB Assistant</h4><span>● Online</span></div>
+    <button class="chat-close" id="chat-close">✕</button>
+  </div>
+  <div class="chat-messages" id="chat-messages"></div>
+  <div class="chat-input-wrap">
+    <input class="chat-input" id="chat-input" type="text" placeholder="Ask me anything…" autocomplete="off">
+    <button class="chat-send" id="chat-send">➤</button>
+  </div>
+</div>
+
+<script src="js/transitions.js"></script>
+<script src="js/main.js"></script>
+<script src="js/carousel.js"></script>
+<script src="js/chatbot.js"></script>
+
+<style>
+/* ── Carousel ───────────────────────────────────────────── */
+.carousel-wrap {
+  position: relative;
+  border-radius: var(--radius);
+  overflow: hidden;
+  height: 500px;
+  border: 1px solid var(--border);
+}
+.carousel-track {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.carousel-slide {
+  position: absolute;
+  inset: 0;
+}
+.slide-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  transform-origin: center;
+}
+.slide-bg-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(23,25,26,0.92) 35%, rgba(23,25,26,0.55) 100%);
+}
+.slide-content {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem 4rem;
+  max-width: 600px;
+}
+.slide-label {
+  font-family: var(--mono);
+  font-size: .68rem;
+  color: var(--copper);
+  letter-spacing: .3em;
+  text-transform: uppercase;
+  margin-bottom: .6rem;
+}
+.slide-title {
+  font-family: var(--serif);
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+.slide-desc {
+  font-size: .85rem;
+  color: var(--text);
+  line-height: 1.75;
+  margin-bottom: 1.2rem;
+  max-width: 500px;
+}
+.slide-btn { font-size:.75rem; padding:.65rem 1.6rem; }
+
+/* Arrows */
+.carousel-prev, .carousel-next {
+  position: absolute;
+  top: 50%; transform: translateY(-50%);
+  z-index: 10;
+  width: 44px; height: 44px;
+  border-radius: 50%;
+  background: rgba(23,25,26,.75);
+  border: 1px solid var(--border);
+  color: var(--accent);
+  font-size: 1.1rem;
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer;
+  transition: background .2s, border-color .2s;
+  backdrop-filter: blur(8px);
+}
+.carousel-prev { left: 1rem; }
+.carousel-next { right: 1rem; }
+.carousel-prev:hover, .carousel-next:hover { background: var(--copper); border-color: var(--copper); }
+
+/* Dots */
+.carousel-dots {
+  position: absolute;
+  bottom: 1.2rem; left: 50%;
+  transform: translateX(-50%);
+  display: flex; gap: .5rem;
+  z-index: 10;
+}
+.carousel-dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: rgba(238,197,160,.3);
+  border: none; cursor: pointer;
+  transition: background .3s, transform .3s;
+}
+.carousel-dot.active {
+  background: var(--accent);
+  transform: scale(1.3);
+}
+
+/* Thesis grid */
+.thesis-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.8rem;
+}
+.thesis-card { padding: 1.8rem; }
+.thesis-num {
+  font-family: var(--mono);
+  font-size: .68rem;
+  color: var(--copper);
+  letter-spacing: .25em;
+  margin-bottom: .5rem;
+}
+.thesis-title {
+  font-family: var(--serif);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: .75rem;
+  line-height: 1.3;
+}
+.thesis-desc {
+  font-size: .82rem;
+  color: var(--text);
+  line-height: 1.75;
+  margin-bottom: 1rem;
+}
+
+@media(max-width:768px) {
+  .carousel-wrap { height: auto; min-height: 480px; }
+  .slide-content { padding: 2rem 1.5rem; }
+  .thesis-grid { grid-template-columns: 1fr; }
+}
+</style>
+
+</body>
+</html>

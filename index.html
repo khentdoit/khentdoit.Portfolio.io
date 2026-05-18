@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Khent Benedict Balulot — Computer Engineering Student, DOST Scholar, IoT & Network Builder">
+  <title>Khent Benedict Balulot | Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/chatbot.css">
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════
+     NAVIGATION
+═══════════════════════════════════════════════ -->
+<nav class="nav">
+  <a href="index.html" class="nav-logo">KB<span>.</span></a>
+  <div class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </div>
+<ul class="nav-links" id="nav-links">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="about.html">About</a></li>
+  <li><a href="projects.html">Projects</a></li>
+  <li><a href="contact.html">Contact</a></li>
+    <li><a href="cv.html">CV / Resume</a></li>      
+</ul>
+</nav>
+
+
+<!-- ═══════════════════════════════════════════════
+     HERO SECTION
+═══════════════════════════════════════════════ -->
+<section class="hero" id="hero">
+  <!-- Animated canvas background -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- Ambient glow orbs -->
+  <div class="hero-orb hero-orb-1"></div>
+  <div class="hero-orb hero-orb-2"></div>
+
+  <div class="hero-content">
+    <p class="section-label">◈ Portfolio</p>
+
+    <h1 class="hero-name">
+      Khent Benedict<br><span>Balulot</span>
+    </h1>
+
+    <p class="hero-title">
+      <span id="typewriter"
+        data-lines='["Computer Engineering Student","Future Network DevOps Engineer","IoT &amp; Embedded Systems Builder","Cloud Infrastructure Enthusiast"]'>
+      </span>
+    </p>
+
+    <p class="hero-bio">
+      DOST-SEI Scholar · Builder by nature · From robotic arms to network stacks,
+      I don't just study engineering — I build it.
+    </p>
+
+    <div class="hero-cta">
+      <a href="projects.html" class="btn btn-primary">View My Work</a>
+      <a href="contact.html" class="btn btn-outline">Get In Touch</a>
+    </div>
+
+    <div class="hero-badges">
+      <span class="hero-badge">🏅 DOST-SEI Scholar</span>
+      <span class="hero-badge">🏅 CHED CTP Scholar</span>
+      <span class="hero-badge">🥉 ICPEP 3rd Place — C++</span>
+    </div>
+  </div>
+
+  <div class="scroll-indicator">SCROLL</div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     STATS BAR
+═══════════════════════════════════════════════ -->
+<section class="stats-section" style="padding:0 6% 5rem">
+  <div class="container fade-up">
+    <div class="stats-bar">
+      <div class="stat-item">
+        <div class="stat-number" data-count="10" data-suffix="+">0+</div>
+        <div class="stat-label">Projects Built</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number" data-count="6">0</div>
+        <div class="stat-label">Thesis Commissions</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number" data-count="2">0</div>
+        <div class="stat-label">Google Certificates</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number" data-count="5" data-suffix="+">0+</div>
+        <div class="stat-label">Awards &amp; Honours</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     QUICK INTRO STRIP
+═══════════════════════════════════════════════ -->
+<section style="padding:4rem 6%">
+  <div class="container">
+    <div class="intro-grid">
+      <div class="fade-up">
+        <p class="section-label">What I do</p>
+        <h2 class="section-title">Building at the edge of hardware &amp; software</h2>
+        <div class="section-rule"></div>
+        <p style="color:var(--text);line-height:1.9;margin-bottom:1.5rem">
+          I design and build systems that bridge the physical and digital — from
+          voice-controlled robotic arms and IoT safety networks to custom electronics
+          and web-based dashboards. Everything self-driven, everything hands-on.
+        </p>
+        <p style="color:var(--text-dim);font-size:.88rem;line-height:1.8">
+          Currently expanding into <strong style="color:var(--accent)">Network infrastructure,
+          Cloud technologies DevOps, Edge Ai and Embedded Machine Learning System</strong> — and actively looking for an OJT / Internship / Entry Level Jobs where
+          I can contribute something real, not just observe.
+        </p>
+        <div style="margin-top:2rem;display:flex;gap:1rem;flex-wrap:wrap">
+          <a href="about.html" class="btn btn-outline">About Me</a>
+          <a href="projects.html" class="btn btn-primary">See Projects</a>
+        </div>
+      </div>
+
+      <div class="quick-skills fade-up">
+        <div class="quick-skill-card card card-shimmer">
+          <div class="qs-icon">🌐</div>
+          <h4>Networking</h4>
+          <p>TCP/IP · DNS · DHCP · IP Routing · Troubleshooting · ESP32 Mesh</p>
+        </div>
+        <div class="quick-skill-card card card-shimmer">
+          <div class="qs-icon">⚙️</div>
+          <h4>Embedded Systems</h4>
+          <p>ESP32 · Arduino · LattePanda · Raspberry Pi · C/C++ · Sensors</p>
+        </div>
+        <div class="quick-skill-card card card-shimmer">
+          <div class="qs-icon">🐍</div>
+          <h4>Software</h4>
+          <p>Python · JavaScript · HTML/CSS · Git/GitHub · Linux basics</p>
+        </div>
+        <div class="quick-skill-card card card-shimmer">
+          <div class="qs-icon">📐</div>
+          <h4>Design &amp; Electronics</h4>
+          <p>SolidWorks · Blender · KiCad · EasyEDA · PCB Layout · Schematics</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════════════ -->
+<footer>
+   <p>© 2026 Khent Benedict Balulot · <a href="https://github.com/khentdoit" target="_blank">github.com/khentdoit</a></p>
+<nav class="footer-links">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="projects.html">Projects</a>
+  <a href="contact.html">Contact</a>
+  <a href="cv.html">CV - Resume</a>   
+</nav>
+</footer>
+
+<!-- ═══════════════════════════════════════════════
+     CHATBOT WIDGET
+═══════════════════════════════════════════════ -->
+<button class="chat-toggle" id="chat-toggle" aria-label="Open chat">
+  💬
+  <span class="chat-badge" id="chat-badge"></span>
+</button>
+
+<div class="chat-window" id="chat-window" role="dialog" aria-label="KB Assistant">
+  <div class="chat-header">
+    <div class="chat-avatar">🤖</div>
+    <div class="chat-header-info">
+      <h4>KB Assistant</h4>
+      <span>● Online · Ask me anything</span>
+    </div>
+    <button class="chat-close" id="chat-close" aria-label="Close">✕</button>
+  </div>
+  <div class="chat-messages" id="chat-messages"></div>
+  <div class="chat-input-wrap">
+    <input class="chat-input" id="chat-input" type="text" placeholder="Ask about projects, skills…" autocomplete="off">
+    <button class="chat-send" id="chat-send" aria-label="Send">➤</button>
+  </div>
+</div>
+
+<!-- ── Page overlay for transitions ── -->
+<div class="page-transition-overlay" id="overlay"></div>
+
+<script src="js/transitions.js"></script>
+<script src="js/main.js"></script>
+<script src="js/chatbot.js"></script>
+
+<style>
+/* ── Hero (index-specific) ──────────────────────────────── */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 6%;
+  overflow: hidden;
+  background: radial-gradient(ellipse at 70% 40%, rgba(39,50,49,0.6), transparent 60%),
+              radial-gradient(ellipse at 20% 80%, rgba(23,25,26,0.9), transparent 60%),
+              var(--bg);
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 680px;
+  padding: 6rem 0 4rem;
+}
+.hero-name {
+  font-family: var(--serif);
+  font-size: clamp(3rem, 8vw, 6rem);
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 1.05;
+  margin-bottom: 1.2rem;
+}
+.hero-name span { color: var(--copper); }
+.hero-title {
+  font-family: var(--mono);
+  font-size: clamp(0.85rem, 2vw, 1.05rem);
+  color: var(--copper);
+  letter-spacing: 0.08em;
+  margin-bottom: 1.5rem;
+  min-height: 1.6em;
+}
+.hero-bio {
+  font-size: 1rem;
+  color: var(--text-dim);
+  margin-bottom: 2.2rem;
+  max-width: 520px;
+}
+.hero-cta { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 2rem; }
+.hero-badges { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+.hero-badge {
+  padding: 0.35rem 0.9rem;
+  background: rgba(173,110,84,0.1);
+  border: 1px solid rgba(173,110,84,0.25);
+  border-radius: 20px;
+  font-size: 0.72rem;
+  font-family: var(--mono);
+  color: var(--accent);
+}
+
+/* ── Intro Grid ─────────────────────────────────────────── */
+.intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+.quick-skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.quick-skill-card {
+  padding: 1.4rem;
+}
+.qs-icon { font-size: 1.6rem; margin-bottom: 0.6rem; }
+.quick-skill-card h4 {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 0.4rem;
+}
+.quick-skill-card p { font-size: 0.78rem; color: var(--text-dim); line-height: 1.6; }
+
+@media (max-width: 900px) {
+  .intro-grid { grid-template-columns: 1fr; gap: 3rem; }
+}
+@media (max-width: 600px) {
+  .quick-skills { grid-template-columns: 1fr; }
+  .hero-name { font-size: 2.8rem; }
+}
+</style>
+
+</body>
+</html>
