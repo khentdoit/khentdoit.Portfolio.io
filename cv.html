@@ -24,9 +24,7 @@
 
 <div class="page">
 
-<!-- ═══════════════════════════════════════════════
-     CV HEADER with SHAREABLE QR CODE + LINKS
-═══════════════════════════════════════════════ -->
+<!-- CV HEADER with SHAREABLE QR CODE + LINKS -->
 <section style="padding:5rem 6% 2rem">
   <div class="container fade-up" style="text-align:center">
     <p class="section-label">◈ Curriculum Vitae</p>
@@ -40,7 +38,7 @@
     <div class="share-section" style="margin-top:2rem">
       <p style="font-size:.75rem;font-family:var(--mono);color:var(--copper);letter-spacing:.2em;margin-bottom:1rem">⬇ SHARE THIS CV ⬇</p>
       
-      <div style="display:flex;justify-content:center;gap:2rem;flex-wrap:wrap;align-items:center">
+      <div style="display:flex;justify-content:center;gap:2rem;flex-wrap:wrap;align-items:flex-start">
         
         <!-- QR Code Card -->
         <div class="card" style="padding:1.2rem;text-align:center;background:rgba(39,50,49,0.6);min-width:180px">
@@ -58,37 +56,41 @@
           </div>
         </div>
         
-        <!-- Share Buttons -->
-        <div style="display:flex;flex-direction:column;gap:.8rem">
+        <!-- Share Buttons - UPDATED: Centered with Download below Copy Link -->
+        <div style="display:flex;flex-direction:column;gap:.8rem;align-items:center">
+          
+          <!-- Copy CV Direct Link (Centered) -->
           <a href="#" id="directCvLink" class="btn btn-outline" style="display:inline-flex;gap:.5rem;align-items:center">
             🔗 Copy CV Direct Link
           </a>
-          <div style="display:flex;gap:.5rem;flex-wrap:wrap;justify-content:center">
+          
+          <!-- Download / Print PDF Button (Below, Centered) -->
+          <div style="text-align:center">
+            <a href="#" onclick="window.print();return false;" class="btn btn-primary" style="display:inline-flex;gap:.5rem">
+              📄 Download / Print PDF
+            </a>
+            <p style="font-size:.65rem;color:var(--text-dim);margin-top:.5rem">Save as PDF via Print → "Save as PDF"</p>
+          </div>
+          
+          <!-- Social Share Buttons -->
+          <div style="display:flex;gap:.5rem;flex-wrap:wrap;justify-content:center;margin-top:.5rem">
             <button onclick="shareViaEmail()" class="btn-small" style="background:rgba(173,110,84,0.15);border:1px solid var(--border);border-radius:20px;padding:.3rem .8rem;font-size:.7rem;color:var(--accent);cursor:pointer">📧 Email</button>
             <button onclick="shareViaLinkedIn()" class="btn-small" style="background:rgba(173,110,84,0.15);border:1px solid var(--border);border-radius:20px;padding:.3rem .8rem;font-size:.7rem;color:var(--accent);cursor:pointer">💼 LinkedIn</button>
             <button onclick="shareViaTwitter()" class="btn-small" style="background:rgba(173,110,84,0.15);border:1px solid var(--border);border-radius:20px;padding:.3rem .8rem;font-size:.7rem;color:var(--accent);cursor:pointer">🐦 X/Twitter</button>
             <button onclick="shareViaWhatsApp()" class="btn-small" style="background:rgba(173,110,84,0.15);border:1px solid var(--border);border-radius:20px;padding:.3rem .8rem;font-size:.7rem;color:var(--accent);cursor:pointer">📱 WhatsApp</button>
           </div>
+          
           <p style="font-size:.65rem;color:var(--text-dim);margin-top:.5rem">
             📌 Right-click QR Code → Save Image → Share anywhere
           </p>
         </div>
         
-        <!-- Download Button -->
-        <div>
-          <a href="#" onclick="window.print();return false;" class="btn btn-primary" style="display:inline-flex;gap:.5rem">
-            📄 Download / Print PDF
-          </a>
-          <p style="font-size:.65rem;color:var(--text-dim);margin-top:.5rem">Save as PDF via Print → "Save as PDF"</p>
-        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════════
-     FULL CV CONTENT
-═══════════════════════════════════════════════ -->
+<!-- FULL CV CONTENT (unchanged - keeping your existing content) -->
 <section style="padding:1rem 6% 4rem">
   <div class="container">
     <div class="cv-container card" style="padding:2.5rem;max-width:1100px;margin:0 auto">
@@ -110,13 +112,12 @@
         </div>
       </div>
 
-      <!-- TECHNICAL SKILLS (EXPANDED) -->
+      <!-- TECHNICAL SKILLS -->
       <div class="cv-section">
         <h2 class="cv-section-title">TECHNICAL SKILLS</h2>
         
         <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem">
           
-          <!-- NETWORKING -->
           <div>
             <h3 style="color:var(--copper);font-size:.85rem;margin-bottom:.8rem;font-family:var(--mono);border-left:2px solid var(--copper);padding-left:.6rem">🌐 NETWORKING & INFRASTRUCTURE</h3>
             <ul class="cv-list">
@@ -129,7 +130,6 @@
             </ul>
           </div>
           
-          <!-- SYSTEMS & NETWORK ADMIN -->
           <div>
             <h3 style="color:var(--copper);font-size:.85rem;margin-bottom:.8rem;font-family:var(--mono);border-left:2px solid var(--copper);padding-left:.6rem">🖥️ SYSTEMS & NETWORK ADMINISTRATION</h3>
             <ul class="cv-list">
@@ -144,7 +144,6 @@
             </ul>
           </div>
           
-          <!-- LINUX -->
           <div>
             <h3 style="color:var(--copper);font-size:.85rem;margin-bottom:.8rem;font-family:var(--mono);border-left:2px solid var(--copper);padding-left:.6rem">🐧 LINUX & SYSTEMS</h3>
             <ul class="cv-list">
@@ -159,7 +158,6 @@
             </ul>
           </div>
           
-          <!-- SERVER & CLOUD -->
           <div>
             <h3 style="color:var(--copper);font-size:.85rem;margin-bottom:.8rem;font-family:var(--mono);border-left:2px solid var(--copper);padding-left:.6rem">☁️ SERVER & CLOUD</h3>
             <ul class="cv-list">
@@ -170,7 +168,6 @@
             </ul>
           </div>
           
-          <!-- DATA HANDLING -->
           <div>
             <h3 style="color:var(--copper);font-size:.85rem;margin-bottom:.8rem;font-family:var(--mono);border-left:2px solid var(--copper);padding-left:.6rem">📊 DATA HANDLING & ANALYTICS</h3>
             <ul class="cv-list">
@@ -181,7 +178,6 @@
             </ul>
           </div>
           
-          <!-- EMBEDDED SYSTEMS -->
           <div>
             <h3 style="color:var(--copper);font-size:.85rem;margin-bottom:.8rem;font-family:var(--mono);border-left:2px solid var(--copper);padding-left:.6rem">⚙️ EMBEDDED SYSTEMS</h3>
             <ul class="cv-list">
