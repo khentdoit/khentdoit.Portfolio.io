@@ -37,25 +37,25 @@
   </div>
 </section>
 
-<!-- KEN BURNS CAROUSEL — Personal Projects (FIXED FOR MOBILE) -->
+<!-- CAROUSEL — Personal Projects (SELF-CONTAINED, MOBILE FIXED) -->
 <section style="padding:2rem 6% 5rem">
   <div class="container">
     <p class="section-label">◈ Featured</p>
     <h2 class="section-title" style="font-size:1.8rem;margin-bottom:.5rem">Personal Projects</h2>
     <div class="section-rule"></div>
 
-    <div class="carousel-wrap fade-up">
-      <button class="carousel-prev" aria-label="Previous slide">&#8592;</button>
-      <button class="carousel-next" aria-label="Next slide">&#8594;</button>
-
-      <div class="carousel-track">
-
-        <!-- SLIDE 1: KYUN AI Robotic Arm -->
-        <div class="carousel-slide">
-          <div class="slide-bg" style="background:linear-gradient(135deg,#0d1a15 0%,#1a2a20 40%,#0a1208 100%)">
-            <div class="slide-bg-overlay"></div>
+    <div class="carousel-container">
+      <button class="carousel-btn prev-btn" id="prevBtn">&#8592;</button>
+      <button class="carousel-btn next-btn" id="nextBtn">&#8594;</button>
+      
+      <div class="carousel-slides" id="carouselSlides">
+        
+        <!-- Slide 1 -->
+        <div class="carousel-item">
+          <div class="carousel-bg" style="background:linear-gradient(135deg,#0d1a15 0%,#1a2a20 40%,#0a1208 100%)">
+            <div class="carousel-overlay"></div>
           </div>
-          <div class="slide-content">
+          <div class="carousel-content">
             <div class="slide-label">Project 01</div>
             <h2 class="slide-title">KYUN AI — 6-Axis Robotic Arm</h2>
             <p class="slide-desc">
@@ -64,7 +64,7 @@
               joystick servo control, AI chatbot integration, and is actively being trained with
               machine learning for gesture recognition.
             </p>
-            <div class="tags" style="margin-bottom:1.5rem">
+            <div class="tags">
               <span class="tag">ESP32</span>
               <span class="tag">LattePanda V2</span>
               <span class="tag">Python</span>
@@ -75,13 +75,13 @@
             <a href="https://github.com/ikheent" target="_blank" class="btn btn-primary slide-btn">View on GitHub →</a>
           </div>
         </div>
-
-        <!-- SLIDE 2: Safety House IoT with Telegram Bot -->
-        <div class="carousel-slide">
-          <div class="slide-bg" style="background:linear-gradient(135deg,#1a0d08 0%,#2a1510 40%,#120808 100%)">
-            <div class="slide-bg-overlay"></div>
+        
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="carousel-bg" style="background:linear-gradient(135deg,#1a0d08 0%,#2a1510 40%,#120808 100%)">
+            <div class="carousel-overlay"></div>
           </div>
-          <div class="slide-content">
+          <div class="carousel-content">
             <div class="slide-label">Project 02</div>
             <h2 class="slide-title">Safety House IoT System</h2>
             <p class="slide-desc">
@@ -89,7 +89,7 @@
               Integrated with an ESP32 web server for remote monitoring via mobile or laptop.
               Automated Telegram bot sends real-time alerts and notifications using the Telegram API.
             </p>
-            <div class="tags" style="margin-bottom:1.5rem">
+            <div class="tags">
               <span class="tag">ESP32</span>
               <span class="tag">Telegram API</span>
               <span class="tag">IoT</span>
@@ -100,13 +100,13 @@
             <a href="https://github.com/ikheent" target="_blank" class="btn btn-primary slide-btn">View on GitHub →</a>
           </div>
         </div>
-
-        <!-- SLIDE 3: Smart Cane with GPS -->
-        <div class="carousel-slide">
-          <div class="slide-bg" style="background:linear-gradient(135deg,#0a0e1a 0%,#0d1628 40%,#080a14 100%)">
-            <div class="slide-bg-overlay"></div>
+        
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+          <div class="carousel-bg" style="background:linear-gradient(135deg,#0a0e1a 0%,#0d1628 40%,#080a14 100%)">
+            <div class="carousel-overlay"></div>
           </div>
-          <div class="slide-content">
+          <div class="carousel-content">
             <div class="slide-label">Project 03</div>
             <h2 class="slide-title">Smart Cane for the Visually Impaired</h2>
             <p class="slide-desc">
@@ -115,7 +115,7 @@
               powers the cane sensors, while an ESP32-C3 slave runs a web server with GPS tracking
               and communicates wirelessly via ESP-NOW.
             </p>
-            <div class="tags" style="margin-bottom:1.5rem">
+            <div class="tags">
               <span class="tag">ESP32</span>
               <span class="tag">ESP32-C3</span>
               <span class="tag">ESP-NOW</span>
@@ -126,13 +126,13 @@
             <a href="https://github.com/ikheent" target="_blank" class="btn btn-primary slide-btn">View on GitHub →</a>
           </div>
         </div>
-
-        <!-- SLIDE 4: Automated Farm Irrigation -->
-        <div class="carousel-slide">
-          <div class="slide-bg" style="background:linear-gradient(135deg,#0a1a0a 0%,#0d2010 40%,#081408 100%)">
-            <div class="slide-bg-overlay"></div>
+        
+        <!-- Slide 4 -->
+        <div class="carousel-item">
+          <div class="carousel-bg" style="background:linear-gradient(135deg,#0a1a0a 0%,#0d2010 40%,#081408 100%)">
+            <div class="carousel-overlay"></div>
           </div>
-          <div class="slide-content">
+          <div class="carousel-content">
             <div class="slide-label">Project 04</div>
             <h2 class="slide-title">Automated Farm Irrigation System</h2>
             <p class="slide-desc">
@@ -140,7 +140,7 @@
               data from soil moisture sensors, humidity sensors, and heat sensors. Fully automated
               with threshold-based logic — no manual intervention required.
             </p>
-            <div class="tags" style="margin-bottom:1.5rem">
+            <div class="tags">
               <span class="tag">ESP32</span>
               <span class="tag">Soil Sensor</span>
               <span class="tag">DHT Sensor</span>
@@ -151,13 +151,13 @@
             <a href="https://github.com/ikheent" target="_blank" class="btn btn-primary slide-btn">View on GitHub →</a>
           </div>
         </div>
-
-        <!-- SLIDE 5: DIY Power Supply -->
-        <div class="carousel-slide">
-          <div class="slide-bg" style="background:linear-gradient(135deg,#1a140a 0%,#221a08 40%,#140e04 100%)">
-            <div class="slide-bg-overlay"></div>
+        
+        <!-- Slide 5 -->
+        <div class="carousel-item">
+          <div class="carousel-bg" style="background:linear-gradient(135deg,#1a140a 0%,#221a08 40%,#140e04 100%)">
+            <div class="carousel-overlay"></div>
           </div>
-          <div class="slide-content">
+          <div class="carousel-content">
             <div class="slide-label">Project 05</div>
             <h2 class="slide-title">DIY 5V / 3A Linear Power Supply</h2>
             <p class="slide-desc">
@@ -165,7 +165,7 @@
               transformer, rectifier diodes, filter capacitors, and a voltage divider network.
               Outputs a stable 5V at 3A — used to power project prototypes and ESP32 circuits.
             </p>
-            <div class="tags" style="margin-bottom:1.5rem">
+            <div class="tags">
               <span class="tag">Electronics</span>
               <span class="tag">Transformer</span>
               <span class="tag">Voltage Regulator</span>
@@ -175,13 +175,13 @@
             <a href="https://github.com/ikheent" target="_blank" class="btn btn-primary slide-btn">View on GitHub →</a>
           </div>
         </div>
-
-        <!-- SLIDE 6: 3D Projects -->
-        <div class="carousel-slide">
-          <div class="slide-bg" style="background:linear-gradient(135deg,#1a1a2e 0%,#16213e 40%,#0f0f1a 100%)">
-            <div class="slide-bg-overlay"></div>
+        
+        <!-- Slide 6 -->
+        <div class="carousel-item">
+          <div class="carousel-bg" style="background:linear-gradient(135deg,#1a1a2e 0%,#16213e 40%,#0f0f1a 100%)">
+            <div class="carousel-overlay"></div>
           </div>
-          <div class="slide-content">
+          <div class="carousel-content">
             <div class="slide-label">Project 06</div>
             <h2 class="slide-title">3D Modeling & Design</h2>
             <p class="slide-desc">
@@ -189,7 +189,7 @@
               Smart Trashcan (SolidWorks), Solar Phone Charging Station, Custom Nameplates,
               Balancing Gambot Hand Mechanism, and various mechanical layouts ready for fabrication.
             </p>
-            <div class="tags" style="margin-bottom:1.5rem">
+            <div class="tags">
               <span class="tag">SolidWorks</span>
               <span class="tag">Blender</span>
               <span class="tag">3D Modeling</span>
@@ -199,13 +199,13 @@
             <a href="https://github.com/ikheent" target="_blank" class="btn btn-primary slide-btn">View on GitHub →</a>
           </div>
         </div>
-
-        <!-- SLIDE 7: PCB Layouts & Custom Sensors -->
-        <div class="carousel-slide">
-          <div class="slide-bg" style="background:linear-gradient(135deg,#0f172a 0%,#1e293b 40%,#0a0f1a 100%)">
-            <div class="slide-bg-overlay"></div>
+        
+        <!-- Slide 7 -->
+        <div class="carousel-item">
+          <div class="carousel-bg" style="background:linear-gradient(135deg,#0f172a 0%,#1e293b 40%,#0a0f1a 100%)">
+            <div class="carousel-overlay"></div>
           </div>
-          <div class="slide-content">
+          <div class="carousel-content">
             <div class="slide-label">Project 07</div>
             <h2 class="slide-title">PCB Layouts & Custom Sensors</h2>
             <p class="slide-desc">
@@ -213,7 +213,7 @@
               Includes custom-designed water level sensor, automatic trigger circuit for water pumps,
               relay protection modules, and optimized board layouts using KiCad and EasyEDA.
             </p>
-            <div class="tags" style="margin-bottom:1.5rem">
+            <div class="tags">
               <span class="tag">KiCad</span>
               <span class="tag">EasyEDA</span>
               <span class="tag">PCB Layout</span>
@@ -224,11 +224,11 @@
             <a href="https://github.com/ikheent" target="_blank" class="btn btn-primary slide-btn">View on GitHub →</a>
           </div>
         </div>
-
-      </div><!-- end carousel-track -->
-
-      <div class="carousel-dots"></div>
-    </div><!-- end carousel-wrap -->
+        
+      </div>
+      
+      <div class="carousel-dots" id="carouselDots"></div>
+    </div>
   </div>
 </section>
 
@@ -239,12 +239,11 @@
     <h2 class="section-title">Built for Other Universities</h2>
     <div class="section-rule"></div>
     <p style="color:var(--text-dim);max-width:600px;margin-bottom:3rem;font-size:.88rem;line-height:1.8">
-      These systems were fully commissioned and built under tight deadlines — while balancing a dancing career, being a student assistant, maintaining DOST-SEI scholarship and Dean's List standing, and pursuing online certifications outside of my BS CpE curriculum. Every project delivered, no shortcuts taken. <br> (Final output image & Papers can't be displayed due to an agreement)
+      These systems were fully commissioned and built under tight deadlines — while balancing a dancing career, being a student assistant, maintaining DOST-SEI scholarship and Dean's List standing, and pursuing online certifications outside of my BS CpE curriculum. Every project delivered, no shortcuts taken. <br> (Final output image & Papers can't be displayed due to Agreement)
     </p>
 
     <div class="thesis-grid fade-up">
 
-      <!-- Commission 1: Rice Fodder Machine -->
       <div class="card card-shimmer thesis-card">
         <img src="img/rice.jpg" alt="Rice Fodder Machine" onerror="this.src='https://placehold.co/400x200/1a2a20/AD6E54?text=Rice+Fodder+Machine'">
         <div class="thesis-num">Commission 01</div>
@@ -265,7 +264,6 @@
         </div>
       </div>
 
-      <!-- Commission 2: Sulfur Detector -->
       <div class="card card-shimmer thesis-card">
         <img src="img/sim.jpg" alt="SIM800L Sulfur Detector" onerror="this.src='https://placehold.co/400x200/1a2a20/AD6E54?text=Sulfur+Detector'">
         <div class="thesis-num">Commission 02</div>
@@ -285,7 +283,6 @@
         </div>
       </div>
 
-      <!-- Commission 3: Smart Cane -->
       <div class="card card-shimmer thesis-card">
         <img src="img/blind.jpg" alt="Smart Cane with GPS" onerror="this.src='https://placehold.co/400x200/1a2a20/AD6E54?text=Smart+Cane'">
         <div class="thesis-num">Commission 03</div>
@@ -304,7 +301,6 @@
         </div>
       </div>
 
-      <!-- Commission 4: Solar Paddle Wheel -->
       <div class="card card-shimmer thesis-card">
         <img src="img/solar.jpg" alt="Solar Paddle Wheel" onerror="this.src='https://placehold.co/400x200/1a2a20/AD6E54?text=Solar+Paddle+Wheel'">
         <div class="thesis-num">Commission 04</div>
@@ -324,7 +320,6 @@
         </div>
       </div>
 
-      <!-- Commission 5: Safety House IoT -->
       <div class="card card-shimmer thesis-card">
         <img src="img/safe.jpg" alt="Safety House IoT" onerror="this.src='https://placehold.co/400x200/1a2a20/AD6E54?text=Safety+House'">
         <div class="thesis-num">Commission 05</div>
@@ -344,7 +339,6 @@
         </div>
       </div>
 
-      <!-- Commission 6: Solar Phone Charging Station -->
       <div class="card card-shimmer thesis-card">
         <img src="img/charge.jpg" alt="Solar Charging Station" onerror="this.src='https://placehold.co/400x200/1a2a20/AD6E54?text=Solar+Charging+Station'">
         <div class="thesis-num">Commission 06</div>
@@ -362,11 +356,11 @@
         </div>
       </div>
 
-    </div><!-- end thesis-grid -->
+    </div>
   </div>
 </section>
 
-</div><!-- end .page -->
+</div>
 
 <footer>
   <p>© 2026 Khent Benedict Balulot · <a href="https://github.com/khentdoit" target="_blank">github.com/khentdoit</a></p>
@@ -395,12 +389,115 @@
 
 <script src="js/transitions.js"></script>
 <script src="js/main.js"></script>
-<script src="js/carousel.js"></script>
 <script src="js/chatbot.js"></script>
 
+<!-- SELF-CONTAINED CAROUSEL JAVASCRIPT - WORKS ON MOBILE -->
+<script>
+(function() {
+  const slides = document.querySelectorAll('.carousel-item');
+  const prevBtn = document.getElementById('prevBtn');
+  const nextBtn = document.getElementById('nextBtn');
+  const dotsContainer = document.getElementById('carouselDots');
+  let currentIndex = 0;
+  let autoInterval;
+  const totalSlides = slides.length;
+
+  // Hide all slides and show current
+  function showSlide(index) {
+    // Wrap around
+    if (index < 0) index = totalSlides - 1;
+    if (index >= totalSlides) index = 0;
+    currentIndex = index;
+    
+    // Hide all slides
+    slides.forEach(slide => {
+      slide.classList.remove('active');
+    });
+    
+    // Show current slide
+    slides[currentIndex].classList.add('active');
+    
+    // Update dots
+    const dots = document.querySelectorAll('.carousel-dot');
+    dots.forEach((dot, i) => {
+      if (i === currentIndex) {
+        dot.classList.add('active');
+      } else {
+        dot.classList.remove('active');
+      }
+    });
+  }
+
+  // Next slide
+  function nextSlide() {
+    showSlide(currentIndex + 1);
+    resetAutoPlay();
+  }
+
+  // Previous slide
+  function prevSlide() {
+    showSlide(currentIndex - 1);
+    resetAutoPlay();
+  }
+
+  // Create dots
+  function createDots() {
+    dotsContainer.innerHTML = '';
+    for (let i = 0; i < totalSlides; i++) {
+      const dot = document.createElement('button');
+      dot.classList.add('carousel-dot');
+      if (i === 0) dot.classList.add('active');
+      dot.addEventListener('click', () => {
+        showSlide(i);
+        resetAutoPlay();
+      });
+      dotsContainer.appendChild(dot);
+    }
+  }
+
+  // Auto-play
+  function startAutoPlay() {
+    autoInterval = setInterval(() => {
+      nextSlide();
+    }, 5000);
+  }
+
+  function resetAutoPlay() {
+    if (autoInterval) {
+      clearInterval(autoInterval);
+    }
+    startAutoPlay();
+  }
+
+  // Stop auto-play on hover/touch
+  function stopAutoPlay() {
+    if (autoInterval) {
+      clearInterval(autoInterval);
+      autoInterval = null;
+    }
+  }
+
+  // Event listeners
+  prevBtn.addEventListener('click', prevSlide);
+  nextBtn.addEventListener('click', nextSlide);
+  
+  // Pause auto-play on touch/mouse enter
+  const carousel = document.querySelector('.carousel-container');
+  carousel.addEventListener('mouseenter', stopAutoPlay);
+  carousel.addEventListener('mouseleave', startAutoPlay);
+  carousel.addEventListener('touchstart', stopAutoPlay);
+  carousel.addEventListener('touchend', startAutoPlay);
+
+  // Initialize
+  createDots();
+  showSlide(0);
+  startAutoPlay();
+})();
+</script>
+
 <style>
-/* Carousel Styles - FIXED FOR MOBILE */
-.carousel-wrap {
+/* Carousel Styles - COMPLETELY SELF-CONTAINED */
+.carousel-container {
   position: relative;
   border-radius: var(--radius);
   overflow: hidden;
@@ -408,39 +505,42 @@
   border: 1px solid var(--border);
 }
 
-.carousel-track {
+.carousel-slides {
   position: relative;
   width: 100%;
   height: 100%;
 }
 
-.carousel-slide {
+.carousel-item {
   position: absolute;
-  inset: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
 }
 
-.carousel-slide.active {
+.carousel-item.active {
   opacity: 1;
   visibility: visible;
 }
 
-.slide-bg {
+.carousel-bg {
   position: absolute;
   inset: 0;
   background-size: cover;
   background-position: center;
 }
 
-.slide-bg-overlay {
+.carousel-overlay {
   position: absolute;
   inset: 0;
   background: linear-gradient(to right, rgba(23,25,26,0.92) 35%, rgba(23,25,26,0.55) 100%);
 }
 
-.slide-content {
+.carousel-content {
   position: relative;
   z-index: 2;
   height: 100%;
@@ -462,7 +562,7 @@
 
 .slide-title {
   font-family: var(--serif);
-  font-size: clamp(1.3rem, 4vw, 2.2rem);
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
   font-weight: 700;
   color: var(--accent);
   margin-bottom: 1rem;
@@ -470,32 +570,32 @@
 }
 
 .slide-desc {
-  font-size: clamp(0.75rem, 3vw, 0.85rem);
+  font-size: .85rem;
   color: var(--text);
-  line-height: 1.65;
+  line-height: 1.75;
   margin-bottom: 1.2rem;
   max-width: 500px;
 }
 
-.slide-btn { 
-  font-size: .75rem; 
-  padding: .65rem 1.6rem; 
+.slide-btn {
+  font-size: .75rem;
+  padding: .65rem 1.6rem;
   width: fit-content;
 }
 
-/* Arrow buttons - mobile friendly */
-.carousel-prev, .carousel-next {
+/* Navigation Buttons */
+.carousel-btn {
   position: absolute;
-  top: 50%; 
+  top: 50%;
   transform: translateY(-50%);
   z-index: 10;
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   background: rgba(23,25,26,0.85);
   border: 1px solid var(--border);
   color: var(--accent);
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -504,27 +604,29 @@
   backdrop-filter: blur(8px);
 }
 
-.carousel-prev { left: 0.8rem; }
-.carousel-next { right: 0.8rem; }
+.prev-btn {
+  left: 1rem;
+}
 
-.carousel-prev:hover, .carousel-next:hover { 
-  background: var(--copper); 
+.next-btn {
+  right: 1rem;
+}
+
+.carousel-btn:hover {
+  background: var(--copper);
   border-color: var(--copper);
   color: var(--bg);
 }
 
-/* Dot indicators */
+/* Dots */
 .carousel-dots {
   position: absolute;
-  bottom: 1rem;
+  bottom: 1.2rem;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-  gap: 0.5rem;
+  gap: 0.6rem;
   z-index: 10;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 0.5rem;
 }
 
 .carousel-dot {
@@ -543,32 +645,33 @@
   transform: scale(1.3);
 }
 
-/* Tags styling */
+/* Tags */
 .tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 0.6rem;
+  margin-bottom: 1.5rem;
 }
 
 .tag {
   background: rgba(173,110,84,0.15);
   border: 1px solid rgba(173,110,84,0.3);
   border-radius: 20px;
-  padding: 0.2rem 0.7rem;
+  padding: 0.25rem 0.8rem;
   font-size: 0.7rem;
   font-family: var(--mono);
   color: var(--accent);
 }
 
-/* Thesis grid */
+/* Thesis Grid */
 .thesis-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 1.8rem;
 }
 
-.thesis-card { 
-  padding: 1.5rem; 
+.thesis-card {
+  padding: 1.5rem;
 }
 
 .thesis-card img {
@@ -605,17 +708,16 @@
 }
 
 /* ============================================
-   MOBILE RESPONSIVE FIXES
+   MOBILE RESPONSIVE
    ============================================ */
 @media (max-width: 768px) {
-  /* Carousel takes auto height on mobile */
-  .carousel-wrap {
+  .carousel-container {
     height: auto;
     min-height: 520px;
   }
   
-  .slide-content {
-    padding: 2rem 1.2rem;
+  .carousel-content {
+    padding: 2rem 1.5rem;
     max-width: 100%;
   }
   
@@ -628,17 +730,20 @@
     max-width: 100%;
   }
   
-  /* Make arrow buttons smaller but still tappable */
-  .carousel-prev, .carousel-next {
+  .carousel-btn {
     width: 36px;
     height: 36px;
     font-size: 1rem;
   }
   
-  .carousel-prev { left: 0.5rem; }
-  .carousel-next { right: 0.5rem; }
+  .prev-btn {
+    left: 0.5rem;
+  }
   
-  /* Dot indicators position adjustment */
+  .next-btn {
+    right: 0.5rem;
+  }
+  
   .carousel-dots {
     bottom: 0.8rem;
     gap: 0.4rem;
@@ -649,7 +754,6 @@
     height: 7px;
   }
   
-  /* Thesis grid single column on mobile */
   .thesis-grid {
     grid-template-columns: 1fr;
     gap: 1.2rem;
@@ -662,21 +766,14 @@
   .thesis-card img {
     height: 160px;
   }
-  
-  /* Section padding adjustments */
-  section {
-    padding-left: 4%;
-    padding-right: 4%;
-  }
 }
 
-/* Small phones (max-width: 480px) */
 @media (max-width: 480px) {
-  .carousel-wrap {
+  .carousel-container {
     min-height: 560px;
   }
   
-  .slide-content {
+  .carousel-content {
     padding: 1.8rem 1rem;
   }
   
@@ -703,20 +800,19 @@
     padding: 0.5rem 1.2rem;
   }
   
-  .carousel-prev, .carousel-next {
+  .carousel-btn {
     width: 32px;
     height: 32px;
     font-size: 0.9rem;
   }
 }
 
-/* Landscape orientation fix */
 @media (max-width: 900px) and (orientation: landscape) {
-  .carousel-wrap {
+  .carousel-container {
     min-height: 400px;
   }
   
-  .slide-content {
+  .carousel-content {
     padding: 1.5rem 2rem;
   }
   
@@ -731,19 +827,16 @@
   }
 }
 
-/* Touch-friendly button sizing */
+/* Touch device optimizations */
 @media (hover: none) and (pointer: coarse) {
-  .carousel-prev, 
-  .carousel-next,
-  .carousel-dot {
-    min-width: 36px;
-    min-height: 36px;
+  .carousel-btn {
+    min-width: 40px;
+    min-height: 40px;
   }
   
-  button, 
-  .btn,
-  .tag {
-    cursor: default;
+  .carousel-dot {
+    min-width: 10px;
+    min-height: 10px;
   }
 }
 </style>
