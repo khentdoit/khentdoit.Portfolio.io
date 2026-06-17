@@ -1,609 +1,653 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CV — Khent Benedict Balulot</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/animations.css">
-  <link rel="stylesheet" href="css/chatbot.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV — Khent Benedict Balulot</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/chatbot.css" />
 </head>
 <body>
 
-<nav class="nav">
-  <a href="index.html" class="nav-logo">KB<span>.</span></a>
-  <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
-  <ul class="nav-links" id="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="projects.html">Projects</a></li>
-    <li><a href="contact.html">Contact</a></li>
-    <li><a href="cv.html" class="active">CV / Resume</a></li>      
-  </ul>
-</nav>
-
-<div class="page">
-
-<!-- CV HEADER with SHAREABLE QR CODE + LINKS -->
-<section style="padding:5rem 6% 2rem">
-  <div class="container fade-up" style="text-align:center">
-    <p class="section-label">◈ Curriculum Vitae</p>
-    <h1 class="section-title">Khent Benedict L. Balulot</h1>
-    <div class="section-rule" style="margin:0 auto 1rem"></div>
-    <p style="color:var(--text-dim);max-width:560px;margin:0 auto;font-size:.92rem">
-      Computer Engineering Student · DOST-SEI Scholar · Network & Linux Enthusiast
-    </p>
-    
-    <!-- SHARE SECTION: QR Code + Hyperlinks -->
-    <div class="share-section" style="margin-top:2rem">
-      <p style="font-size:.75rem;font-family:var(--mono);color:var(--copper);letter-spacing:.2em;margin-bottom:1rem">⬇ SHARE THIS CV ⬇</p>
-      
-      <div style="display:flex;justify-content:center;gap:2rem;flex-wrap:wrap;align-items:flex-start">
-        
-        <!-- QR Code Card -->
-        <div class="card" style="padding:1.2rem;text-align:center;background:rgba(39,50,49,0.6);min-width:180px">
-          <p style="font-size:.7rem;font-family:var(--mono);color:var(--copper);margin-bottom:.5rem">📱 SCAN TO VIEW PORTFOLIO</p>
-          <img 
-            id="qrCodeImg"
-            src="https://api.qrserver.com/v1/create-qr-code/?size=140x140&data=https%3A%2F%2Fkhentdoit.github.io%2Fkhentdoit.Portfolio.io%2F&color=AD6E54&bgcolor=273231&margin=8"
-            alt="QR Code to Portfolio"
-            width="120" height="120"
-            style="border-radius:8px;margin:0 auto;display:block"
-          >
-          <div class="share-links" style="margin-top:.8rem">
-            <a href="https://khentdoit.github.io/khentdoit.Portfolio.io/" id="qrLink" class="share-link" target="_blank">🔗 khentdoit.github.io/khentdoit.Portfolio.io</a>
-            <button onclick="copyQRUrl()" class="copy-btn" style="background:none;border:none;color:var(--copper);cursor:pointer;font-size:.65rem;margin-top:.3rem">📋 Copy link</button>
-          </div>
-        </div>
-        
-        <!-- Share Buttons - UPDATED: Centered with Download below Copy Link -->
-        <div style="display:flex;flex-direction:column;gap:.8rem;align-items:center">
-          
-          <!-- Copy CV Direct Link (Centered) -->
-          <a href="#" id="directCvLink" class="btn btn-outline" style="display:inline-flex;gap:.5rem;align-items:center">
-            🔗 Copy CV Direct Link
-          </a>
-          
-          <!-- Download / Print PDF Button (Below, Centered) -->
-          <div style="text-align:center">
-            <a href="#" onclick="window.print();return false;" class="btn btn-primary" style="display:inline-flex;gap:.5rem">
-              📄 Download / Print PDF
-            </a>
-            <p style="font-size:.65rem;color:var(--text-dim);margin-top:.5rem">Save as PDF via Print → "Save as PDF"</p>
-          </div>
-          
-          <!-- Social Share Buttons -->
-          <div style="display:flex;gap:.5rem;flex-wrap:wrap;justify-content:center;margin-top:.5rem">
-            <button onclick="shareViaEmail()" class="btn-small" style="background:rgba(173,110,84,0.15);border:1px solid var(--border);border-radius:20px;padding:.3rem .8rem;font-size:.7rem;color:var(--accent);cursor:pointer">📧 Email</button>
-            <button onclick="shareViaLinkedIn()" class="btn-small" style="background:rgba(173,110,84,0.15);border:1px solid var(--border);border-radius:20px;padding:.3rem .8rem;font-size:.7rem;color:var(--accent);cursor:pointer">💼 LinkedIn</button>
-            <button onclick="shareViaTwitter()" class="btn-small" style="background:rgba(173,110,84,0.15);border:1px solid var(--border);border-radius:20px;padding:.3rem .8rem;font-size:.7rem;color:var(--accent);cursor:pointer">🐦 X/Twitter</button>
-            <button onclick="shareViaWhatsApp()" class="btn-small" style="background:rgba(173,110,84,0.15);border:1px solid var(--border);border-radius:20px;padding:.3rem .8rem;font-size:.7rem;color:var(--accent);cursor:pointer">📱 WhatsApp</button>
-          </div>
-          
-          <p style="font-size:.65rem;color:var(--text-dim);margin-top:.5rem">
-            📌 Right-click QR Code → Save Image → Share anywhere
-          </p>
-        </div>
-        
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- FULL CV CONTENT (unchanged - keeping your existing content) -->
-<section style="padding:1rem 6% 4rem">
-  <div class="container">
-    <div class="cv-container card" style="padding:2.5rem;max-width:1100px;margin:0 auto">
-
-      <!-- EDUCATION -->
-      <div class="cv-section">
-        <h2 class="cv-section-title">EDUCATION</h2>
-        <div class="cv-project">
-          <div class="cv-project-header">
-            <span class="cv-project-title">Bachelor of Science in Computer Engineering</span>
-            <span class="cv-project-date">2022–Present</span>
-          </div>
-          <p style="margin-bottom:.2rem">Carlos Hilado Memorial State University (CHMSU)</p>
-          <ul class="cv-list" style="margin-top:.3rem">
-            <li>DOST-SEI Scholar (JLSS) — top 6.56% nationally</li>
-            <li>CHED CSP Scholar</li>
-            <li>Representative: ICPEP C++ Programming Competition (NIR) — 3rd Place</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- TECHNICAL SKILLS -->
-      <div class="cv-section">
-        <h2 class="cv-section-title">TECHNICAL SKILLS</h2>
-        
-        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem">
-          
-          <div>
-            <h3 style="color:var(--copper);font-size:.85rem;margin-bottom:.8rem;font-family:var(--mono);border-left:2px solid var(--copper);padding-left:.6rem">🌐 NETWORKING & INFRASTRUCTURE</h3>
-            <ul class="cv-list">
-              <li>TCP/IP, DNS, DHCP, IP Routing (conceptual and hands-on)</li>
-              <li>Network troubleshooting & diagnostics</li>
-              <li>ESP32 WebServer & Mesh Networks</li>
-              <li>Basic firewall & security concepts</li>
-              <li class="in-progress">In progress: Call center network fundamentals (VoIP, QoS)</li>
-              <li class="in-progress">In progress: Network monitoring & performance assessment</li>
-            </ul>
-          </div>
-          
-          <div>
-            <h3 style="color:var(--copper);font-size:.85rem;margin-bottom:.8rem;font-family:var(--mono);border-left:2px solid var(--copper);padding-left:.6rem">🖥️ SYSTEMS & NETWORK ADMINISTRATION</h3>
-            <ul class="cv-list">
-              <li><strong>Currently enrolled:</strong> Building "data center in a box" using nested virtualization</li>
-              <li>Type-1 hypervisors (Proxmox VE) — configured as nested VM</li>
-              <li>Network engineering with MikroTik — WAN (NAT), LAN bridge isolation</li>
-              <li>Core network services: DHCP, DNS caching, static entries, gateways</li>
-              <li>Static Routing, NAT Masquerading, Basic Firewall Filter Rules</li>
-              <li>Windows Active Directory Domain Services (implementing)</li>
-              <li>Docker containers for Linux services (deploying)</li>
-              <li>VPN overlays & Access Control Lists for secure access</li>
-            </ul>
-          </div>
-          
-          <div>
-            <h3 style="color:var(--copper);font-size:.85rem;margin-bottom:.8rem;font-family:var(--mono);border-left:2px solid var(--copper);padding-left:.6rem">🐧 LINUX & SYSTEMS</h3>
-            <ul class="cv-list">
-              <li>Linux command line (bash/zsh) — intro, monitoring, data file commands</li>
-              <li>Shell types, built-in commands, environment variables</li>
-              <li>File permissions & filesystem management</li>
-              <li>Process monitoring & service management</li>
-              <li>Basic shell scripting</li>
-              <li>System logging & troubleshooting</li>
-              <li>Package management (apt/yum)</li>
-              <li>Software installation & editor configuration (vim/nano)</li>
-            </ul>
-          </div>
-          
-          <div>
-            <h3 style="color:var(--copper);font-size:.85rem;margin-bottom:.8rem;font-family:var(--mono);border-left:2px solid var(--copper);padding-left:.6rem">☁️ SERVER & CLOUD</h3>
-            <ul class="cv-list">
-              <li>Web server basics (Apache)</li>
-              <li>Proxmox deployment in cloud (VMware, VirtualBox)</li>
-              <li>GitHub version control</li>
-              <li>Learning cloud fundamentals (AWS/GCP exposure)</li>
-            </ul>
-          </div>
-          
-          <div>
-            <h3 style="color:var(--copper);font-size:.85rem;margin-bottom:.8rem;font-family:var(--mono);border-left:2px solid var(--copper);padding-left:.6rem">📊 DATA HANDLING & ANALYTICS</h3>
-            <ul class="cv-list">
-              <li>Python (pandas, numpy)</li>
-              <li>Datasets & data wrangling</li>
-              <li>Data visualization</li>
-              <li>Model development (basic)</li>
-            </ul>
-          </div>
-          
-          <div>
-            <h3 style="color:var(--copper);font-size:.85rem;margin-bottom:.8rem;font-family:var(--mono);border-left:2px solid var(--copper);padding-left:.6rem">⚙️ EMBEDDED SYSTEMS</h3>
-            <ul class="cv-list">
-              <li>ESP32 / Arduino / LattePanda</li>
-              <li>C / C++ / Python</li>
-              <li>Sensors & Actuators integration</li>
-              <li>PCB Layout (KiCad/EasyEDA)</li>
-              <li>SolidWorks / Blender 3D Modeling</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <!-- CERTIFICATIONS -->
-      <div class="cv-section">
-        <h2 class="cv-section-title">CERTIFICATIONS</h2>
-        
-        <div class="cert-item">
-          <div class="cv-project-header">
-            <span class="cv-project-title">✅ Google IT Support Professional Certificate</span>
-            <span class="cv-project-date">2026</span>
-          </div>
-          <p style="font-size:.82rem;color:var(--text-dim)">The Bits and Bytes of Networking — IP routing, DNS, DHCP, troubleshooting</p>
-        </div>
-        
-        <div class="cert-item" style="margin-top:.8rem">
-          <div class="cv-project-header">
-            <span class="cv-project-title">✅ Google IT Automation with Python Professional Certificate</span>
-            <span class="cv-project-date">2026</span>
-          </div>
-          <p style="font-size:.82rem;color:var(--text-dim)">Python syntax, OS interaction, Git/GitHub for infrastructure environments</p>
-        </div>
-        
-        <div style="margin-top:1rem;padding-top:.8rem;border-top:1px dashed var(--border)">
-          <p style="font-size:.8rem;color:var(--copper);margin-bottom:.3rem">🔄 Currently Enrolled / Planned:</p>
-          <ul class="cv-list" style="display:flex;flex-wrap:wrap;gap:.5rem">
-            <li style="background:rgba(173,110,84,0.1);padding:.2rem .8rem;border-radius:20px;font-size:.7rem">Google AI Essentials</li>
-            <li style="background:rgba(173,110,84,0.1);padding:.2rem .8rem;border-radius:20px;font-size:.7rem">Google Advanced Data Analytics</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- KEY PROJECTS -->
-      <div class="cv-section">
-        <h2 class="cv-section-title">KEY PROJECTS</h2>
-        
-        <div class="cv-project">
-          <div class="cv-project-header">
-            <span class="cv-project-title">Data Center in a Box (Virtualization Lab)</span>
-            <span class="cv-project-date">Current</span>
-          </div>
-          <ul class="cv-list" style="margin-top:.3rem">
-            <li>Proxmox VE as nested VM with static management IP</li>
-            <li>Ubuntu + Windows Server base VMs</li>
-            <li>MikroTik WAN/LAN configuration with firewall rules</li>
-            <li>DHCP, DNS caching, static routing implemented</li>
-          </ul>
-        </div>
-        
-        <div class="cv-project">
-          <div class="cv-project-header">
-            <span class="cv-project-title">KYUN AI — 6-Axis Robotic Arm</span>
-            <span class="cv-project-date">2026</span>
-          </div>
-          <ul class="cv-list" style="margin-top:.3rem">
-            <li>Voice-controlled robotic arm with real-time web dashboard</li>
-            <li>Built on LattePanda V2 (x86 SBC running Linux)</li>
-            <li>Linux deployment, Python scripting, web server configuration</li>
-          </ul>
-        </div>
-        
-        <div class="cv-project">
-          <div class="cv-project-header">
-            <span class="cv-project-title">Safety House IoT System</span>
-            <span class="cv-project-date">2025</span>
-          </div>
-          <ul class="cv-list" style="margin-top:.3rem">
-            <li>ESP32-based home safety system with Telegram bot alerts</li>
-            <li>Real-time sensor data streaming via web server</li>
-            <li>ESP32 as access point + web dashboard</li>
-          </ul>
-        </div>
-        
-        <div class="cv-project">
-          <div class="cv-project-header">
-            <span class="cv-project-title">Smart Cane with GPS Tracking</span>
-            <span class="cv-project-date">2025</span>
-          </div>
-          <ul class="cv-list" style="margin-top:.3rem">
-            <li>Dual-ESP32 architecture with ESP-NOW wireless protocol</li>
-            <li>GPS module integration</li>
-            <li>Live web dashboard with location tracking</li>
-          </ul>
-        </div>
-        
-        <div class="cv-project">
-          <div class="cv-project-header">
-            <span class="cv-project-title">Automated Farm Irrigation System</span>
-            <span class="cv-project-date">2023</span>
-          </div>
-          <ul class="cv-list" style="margin-top:.3rem">
-            <li>Threshold-based automation using soil moisture & DHT sensors</li>
-            <li>Relay-controlled actuators — zero manual intervention</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- WORK EXPERIENCE -->
-      <div class="cv-section">
-        <h2 class="cv-section-title">WORK EXPERIENCE</h2>
-        
-        <div class="cv-project">
-          <div class="cv-project-header">
-            <span class="cv-project-title">IT Technician & Network Troubleshooter</span>
-            <span class="cv-project-date">Ongoing</span>
-          </div>
-          <p style="margin-bottom:.2rem"><em>Family-Owned Computer Shop, Bacolod City</em></p>
-          <ul class="cv-list" style="margin-top:.3rem">
-            <li>Daily hardware repair & OS troubleshooting (50+ devices serviced)</li>
-            <li>Local network configuration & client router setup</li>
-            <li>DNS/DHCP configuration for small business networks</li>
-            <li>Customer technical support & diagnostics</li>
-          </ul>
-        </div>
-        
-        <div class="cv-project">
-          <div class="cv-project-header">
-            <span class="cv-project-title">Student Assistant</span>
-            <span class="cv-project-date">2023–Present</span>
-          </div>
-          <p><em>Culture and Arts Office — CHMSU</em></p>
-          <ul class="cv-list" style="margin-top:.3rem">
-            <li>Administrative & event operations support</li>
-            <li>Maintain full-time academic standing (15+ units/semester)</li>
-          </ul>
-        </div>
-        
-        <div class="cv-project">
-          <div class="cv-project-header">
-            <span class="cv-project-title">Thesis Commission Contractor</span>
-            <span class="cv-project-date">2023–Present</span>
-          </div>
-          <p><em>Multiple Universities (CHMSU, JBL, PNU-V)</em></p>
-          <ul class="cv-list" style="margin-top:.3rem">
-            <li>Full embedded systems & electronics for BS Engineering thesis</li>
-            <li>Schematic design, PCB layout, firmware development</li>
-            <li>6+ successful commissions delivered</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- AWARDS -->
-      <div class="cv-section">
-        <h2 class="cv-section-title">AWARDS & HONORS</h2>
-        <ul class="cv-list columns-2">
-          <li>🏅 DOST-SEI Scholar (JLSS 2025) — top 6.56%</li>
-          <li>🏅 CHED CSP Scholar — 2023–2025</li>
-          <li>🥉 3rd Place — ICPEP C++ Programming (NIR) — 2024</li>
-          <li>🏆 SolidWorks Competition 2025 — Finalist</li>
-          <li>📝 Best Research Paper — STEM Senior High — 2022</li>
+    <nav class="nav">
+        <a href="index.html" class="nav-logo">KB<span>.</span></a>
+        <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="cv.html" class="active">CV / Resume</a></li>
         </ul>
-      </div>
+    </nav>
 
-      <!-- ADDITIONAL INFO -->
-      <div class="cv-section" style="border-bottom:none">
-        <h2 class="cv-section-title">ADDITIONAL INFORMATION</h2>
-        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:.5rem">
-          <div class="match-item">📌 English (fluent)</div>
-          <div class="match-item">📌 Filipino (native)</div>
-          <div class="match-item">⏳ Available for OJT/Internship/Entry Level Job</div>
-          <div class="match-item">⚡ Self-driven & accountable</div>
-          <div class="match-item">🎯 Handles pressure well</div>
-          <div class="match-item">📂 Portfolio: khentdoit.github.io/khentdoit.Portfolio.io</div>
-        </div>
-      </div>
+    <div class="page">
+
+        <!-- ===== CV HEADER with SHAREABLE QR CODE + LINKS ===== -->
+        <section style="padding:5rem 6% 2rem">
+            <div class="container fade-up" style="text-align:center">
+                <p class="section-label">◈ Curriculum Vitae</p>
+                <h1 class="section-title">Khent Benedict L. Balulot</h1>
+                <div class="section-rule" style="margin:0 auto 1rem"></div>
+                <p style="color:var(--text-dim);max-width:560px;margin:0 auto;font-size:.92rem">
+                    Computer Engineering Student · DOST-SEI Scholar · Network & Linux Enthusiast
+                </p>
+
+                <!-- SHARE SECTION: QR Code + Hyperlinks -->
+                <div class="share-section" style="margin-top:2rem">
+                    <p style="font-size:.75rem;font-family:var(--mono);color:var(--copper);letter-spacing:.2em;margin-bottom:1rem">⬇ SHARE THIS CV ⬇</p>
+
+                    <div style="display:flex;justify-content:center;gap:2rem;flex-wrap:wrap;align-items:flex-start">
+
+                        <!-- QR Code Card -->
+                        <div class="card" style="padding:1.2rem;text-align:center;background:rgba(39,50,49,0.6);min-width:180px">
+                            <p style="font-size:.7rem;font-family:var(--mono);color:var(--copper);margin-bottom:.5rem">📱 SCAN TO VIEW PORTFOLIO</p>
+                            <img id="qrCodeImg" src="https://api.qrserver.com/v1/create-qr-code/?size=140x140&data=https%3A%2F%2Fkhentdoit.github.io%2Fkhentdoit.Portfolio.io%2F&color=AD6E54&bgcolor=273231&margin=8" alt="QR Code to Portfolio" width="120" height="120" style="border-radius:8px;margin:0 auto;display:block" />
+                            <div class="share-links" style="margin-top:.8rem">
+                                <a href="https://khentdoit.github.io/khentdoit.Portfolio.io/" id="qrLink" class="share-link" target="_blank">🔗 khentdoit.github.io/khentdoit.Portfolio.io</a>
+                                <button onclick="copyQRUrl()" class="copy-btn" style="background:none;border:none;color:var(--copper);cursor:pointer;font-size:.65rem;margin-top:.3rem">📋 Copy link</button>
+                            </div>
+                        </div>
+
+                        <!-- Share Buttons -->
+                        <div style="display:flex;flex-direction:column;gap:.8rem;align-items:center">
+
+                            <!-- Copy CV Direct Link -->
+                            <a href="#" id="directCvLink" class="btn btn-outline" style="display:inline-flex;gap:.5rem;align-items:center">
+                                🔗 Copy CV Direct Link
+                            </a>
+
+                            <!-- Download / Print PDF Button -->
+                            <div style="text-align:center">
+                                <a href="#" onclick="window.print();return false;" class="btn btn-primary" style="display:inline-flex;gap:.5rem">
+                                    📄 Download / Print PDF
+                                </a>
+                                <p style="font-size:.65rem;color:var(--text-dim);margin-top:.5rem">Save as PDF via Print → "Save as PDF"</p>
+                            </div>
+
+                            <!-- Social Share Buttons -->
+                            <div style="display:flex;gap:.5rem;flex-wrap:wrap;justify-content:center;margin-top:.5rem">
+                                <button onclick="shareViaEmail()" class="btn-small" style="background:rgba(173,110,84,0.15);border:1px solid var(--border);border-radius:20px;padding:.3rem .8rem;font-size:.7rem;color:var(--accent);cursor:pointer">📧 Email</button>
+                                <button onclick="shareViaLinkedIn()" class="btn-small" style="background:rgba(173,110,84,0.15);border:1px solid var(--border);border-radius:20px;padding:.3rem .8rem;font-size:.7rem;color:var(--accent);cursor:pointer">💼 LinkedIn</button>
+                                <button onclick="shareViaTwitter()" class="btn-small" style="background:rgba(173,110,84,0.15);border:1px solid var(--border);border-radius:20px;padding:.3rem .8rem;font-size:.7rem;color:var(--accent);cursor:pointer">🐦 X/Twitter</button>
+                                <button onclick="shareViaWhatsApp()" class="btn-small" style="background:rgba(173,110,84,0.15);border:1px solid var(--border);border-radius:20px;padding:.3rem .8rem;font-size:.7rem;color:var(--accent);cursor:pointer">📱 WhatsApp</button>
+                            </div>
+
+                            <p style="font-size:.65rem;color:var(--text-dim);margin-top:.5rem">
+                                📌 Right-click QR Code → Save Image → Share anywhere
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== NEW: RESUME SECTION (View · QR · Download) ===== -->
+        <section style="padding:0 6% 3rem">
+            <div class="container fade-up" style="text-align:center">
+                <div class="card" style="padding:2rem 1.8rem;max-width:620px;margin:0 auto;background:rgba(39,50,49,0.5);border:1px solid var(--border);border-radius:var(--radius)">
+                    <p style="font-size:.65rem;font-family:var(--mono);color:var(--copper);letter-spacing:.2em;margin-bottom:.3rem">📄 RESUME</p>
+                    <h3 style="font-family:var(--serif);color:var(--accent);font-size:1.15rem;margin-bottom:.2rem">View or Download My Resume</h3>
+                    <p style="font-size:.78rem;color:var(--text-dim);margin-bottom:1.2rem">PDF format · Updated 2026</p>
+
+                    <div style="display:flex;flex-direction:column;align-items:center;gap:1rem">
+
+                        <!-- QR Code for Resume PDF -->
+                        <img id="resumeQrImg" src="" alt="QR Code to Resume PDF" width="120" height="120" style="border-radius:8px;display:block" />
+                        <p style="font-size:.6rem;color:var(--text-dim);font-family:var(--mono);margin-top:-.2rem">Scan to view / download resume</p>
+
+                        <!-- Buttons: View + Download -->
+                        <div style="display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;margin-top:.2rem">
+                            <a id="resumeViewBtn" href="#" target="_blank" class="btn btn-primary" style="display:inline-flex;gap:.5rem;align-items:center">📄 View Resume</a>
+                            <a id="resumeDownloadBtn" href="#" download class="btn btn-outline" style="display:inline-flex;gap:.5rem;align-items:center">⬇ Download PDF</a>
+                        </div>
+
+                        <!-- small helper text -->
+                        <p style="font-size:.6rem;color:var(--text-dim);font-family:var(--mono);margin-top:.2rem;opacity:.7">📌 Right‑click QR Code → Save Image</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== FULL CV CONTENT (unchanged) ===== -->
+        <section style="padding:1rem 6% 4rem">
+            <div class="container">
+                <div class="cv-container card" style="padding:2.5rem;max-width:1100px;margin:0 auto">
+
+                    <!-- EDUCATION -->
+                    <div class="cv-section">
+                        <h2 class="cv-section-title">EDUCATION</h2>
+                        <div class="cv-project">
+                            <div class="cv-project-header">
+                                <span class="cv-project-title">Bachelor of Science in Computer Engineering</span>
+                                <span class="cv-project-date">2022–Present</span>
+                            </div>
+                            <p style="margin-bottom:.2rem">Carlos Hilado Memorial State University (CHMSU)</p>
+                            <ul class="cv-list" style="margin-top:.3rem">
+                                <li>DOST-SEI Scholar (JLSS) — top 6.56% nationally</li>
+                                <li>CHED CSP Scholar</li>
+                                <li>Representative: ICPEP C++ Programming Competition (NIR) — 3rd Place</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- TECHNICAL SKILLS -->
+                    <div class="cv-section">
+                        <h2 class="cv-section-title">TECHNICAL SKILLS</h2>
+
+                        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem">
+
+                            <div>
+                                <h3 style="color:var(--copper);font-size:.85rem;margin-bottom:.8rem;font-family:var(--mono);border-left:2px solid var(--copper);padding-left:.6rem">🌐 NETWORKING & INFRASTRUCTURE</h3>
+                                <ul class="cv-list">
+                                    <li>TCP/IP, DNS, DHCP, IP Routing (conceptual and hands-on)</li>
+                                    <li>Network troubleshooting & diagnostics</li>
+                                    <li>ESP32 WebServer & Mesh Networks</li>
+                                    <li>Basic firewall & security concepts</li>
+                                    <li class="in-progress">In progress: Call center network fundamentals (VoIP, QoS)</li>
+                                    <li class="in-progress">In progress: Network monitoring & performance assessment</li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h3 style="color:var(--copper);font-size:.85rem;margin-bottom:.8rem;font-family:var(--mono);border-left:2px solid var(--copper);padding-left:.6rem">🖥️ SYSTEMS & NETWORK ADMINISTRATION</h3>
+                                <ul class="cv-list">
+                                    <li><strong>Currently enrolled:</strong> Building "data center in a box" using nested virtualization</li>
+                                    <li>Type-1 hypervisors (Proxmox VE) — configured as nested VM</li>
+                                    <li>Network engineering with MikroTik — WAN (NAT), LAN bridge isolation</li>
+                                    <li>Core network services: DHCP, DNS caching, static entries, gateways</li>
+                                    <li>Static Routing, NAT Masquerading, Basic Firewall Filter Rules</li>
+                                    <li>Windows Active Directory Domain Services (implementing)</li>
+                                    <li>Docker containers for Linux services (deploying)</li>
+                                    <li>VPN overlays & Access Control Lists for secure access</li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h3 style="color:var(--copper);font-size:.85rem;margin-bottom:.8rem;font-family:var(--mono);border-left:2px solid var(--copper);padding-left:.6rem">🐧 LINUX & SYSTEMS</h3>
+                                <ul class="cv-list">
+                                    <li>Linux command line (bash/zsh) — intro, monitoring, data file commands</li>
+                                    <li>Shell types, built-in commands, environment variables</li>
+                                    <li>File permissions & filesystem management</li>
+                                    <li>Process monitoring & service management</li>
+                                    <li>Basic shell scripting</li>
+                                    <li>System logging & troubleshooting</li>
+                                    <li>Package management (apt/yum)</li>
+                                    <li>Software installation & editor configuration (vim/nano)</li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h3 style="color:var(--copper);font-size:.85rem;margin-bottom:.8rem;font-family:var(--mono);border-left:2px solid var(--copper);padding-left:.6rem">☁️ SERVER & CLOUD</h3>
+                                <ul class="cv-list">
+                                    <li>Web server basics (Apache)</li>
+                                    <li>Proxmox deployment in cloud (VMware, VirtualBox)</li>
+                                    <li>GitHub version control</li>
+                                    <li>Learning cloud fundamentals (AWS/GCP exposure)</li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h3 style="color:var(--copper);font-size:.85rem;margin-bottom:.8rem;font-family:var(--mono);border-left:2px solid var(--copper);padding-left:.6rem">📊 DATA HANDLING & ANALYTICS</h3>
+                                <ul class="cv-list">
+                                    <li>Python (pandas, numpy)</li>
+                                    <li>Datasets & data wrangling</li>
+                                    <li>Data visualization</li>
+                                    <li>Model development (basic)</li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h3 style="color:var(--copper);font-size:.85rem;margin-bottom:.8rem;font-family:var(--mono);border-left:2px solid var(--copper);padding-left:.6rem">⚙️ EMBEDDED SYSTEMS</h3>
+                                <ul class="cv-list">
+                                    <li>ESP32 / Arduino / LattePanda</li>
+                                    <li>C / C++ / Python</li>
+                                    <li>Sensors & Actuators integration</li>
+                                    <li>PCB Layout (KiCad/EasyEDA)</li>
+                                    <li>SolidWorks / Blender 3D Modeling</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CERTIFICATIONS -->
+                    <div class="cv-section">
+                        <h2 class="cv-section-title">CERTIFICATIONS</h2>
+
+                        <div class="cert-item">
+                            <div class="cv-project-header">
+                                <span class="cv-project-title">✅ Google IT Support Professional Certificate</span>
+                                <span class="cv-project-date">2026</span>
+                            </div>
+                            <p style="font-size:.82rem;color:var(--text-dim)">The Bits and Bytes of Networking — IP routing, DNS, DHCP, troubleshooting</p>
+                        </div>
+
+                        <div class="cert-item" style="margin-top:.8rem">
+                            <div class="cv-project-header">
+                                <span class="cv-project-title">✅ Google IT Automation with Python Professional Certificate</span>
+                                <span class="cv-project-date">2026</span>
+                            </div>
+                            <p style="font-size:.82rem;color:var(--text-dim)">Python syntax, OS interaction, Git/GitHub for infrastructure environments</p>
+                        </div>
+
+                        <div style="margin-top:1rem;padding-top:.8rem;border-top:1px dashed var(--border)">
+                            <p style="font-size:.8rem;color:var(--copper);margin-bottom:.3rem">🔄 Currently Enrolled / Planned:</p>
+                            <ul class="cv-list" style="display:flex;flex-wrap:wrap;gap:.5rem">
+                                <li style="background:rgba(173,110,84,0.1);padding:.2rem .8rem;border-radius:20px;font-size:.7rem">Google AI Essentials</li>
+                                <li style="background:rgba(173,110,84,0.1);padding:.2rem .8rem;border-radius:20px;font-size:.7rem">Google Advanced Data Analytics</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- KEY PROJECTS -->
+                    <div class="cv-section">
+                        <h2 class="cv-section-title">KEY PROJECTS</h2>
+
+                        <div class="cv-project">
+                            <div class="cv-project-header">
+                                <span class="cv-project-title">Data Center in a Box (Virtualization Lab)</span>
+                                <span class="cv-project-date">Current</span>
+                            </div>
+                            <ul class="cv-list" style="margin-top:.3rem">
+                                <li>Proxmox VE as nested VM with static management IP</li>
+                                <li>Ubuntu + Windows Server base VMs</li>
+                                <li>MikroTik WAN/LAN configuration with firewall rules</li>
+                                <li>DHCP, DNS caching, static routing implemented</li>
+                            </ul>
+                        </div>
+
+                        <div class="cv-project">
+                            <div class="cv-project-header">
+                                <span class="cv-project-title">KYUN AI — 6-Axis Robotic Arm</span>
+                                <span class="cv-project-date">2026</span>
+                            </div>
+                            <ul class="cv-list" style="margin-top:.3rem">
+                                <li>Voice-controlled robotic arm with real-time web dashboard</li>
+                                <li>Built on LattePanda V2 (x86 SBC running Linux)</li>
+                                <li>Linux deployment, Python scripting, web server configuration</li>
+                            </ul>
+                        </div>
+
+                        <div class="cv-project">
+                            <div class="cv-project-header">
+                                <span class="cv-project-title">Safety House IoT System</span>
+                                <span class="cv-project-date">2025</span>
+                            </div>
+                            <ul class="cv-list" style="margin-top:.3rem">
+                                <li>ESP32-based home safety system with Telegram bot alerts</li>
+                                <li>Real-time sensor data streaming via web server</li>
+                                <li>ESP32 as access point + web dashboard</li>
+                            </ul>
+                        </div>
+
+                        <div class="cv-project">
+                            <div class="cv-project-header">
+                                <span class="cv-project-title">Smart Cane with GPS Tracking</span>
+                                <span class="cv-project-date">2025</span>
+                            </div>
+                            <ul class="cv-list" style="margin-top:.3rem">
+                                <li>Dual-ESP32 architecture with ESP-NOW wireless protocol</li>
+                                <li>GPS module integration</li>
+                                <li>Live web dashboard with location tracking</li>
+                            </ul>
+                        </div>
+
+                        <div class="cv-project">
+                            <div class="cv-project-header">
+                                <span class="cv-project-title">Automated Farm Irrigation System</span>
+                                <span class="cv-project-date">2023</span>
+                            </div>
+                            <ul class="cv-list" style="margin-top:.3rem">
+                                <li>Threshold-based automation using soil moisture & DHT sensors</li>
+                                <li>Relay-controlled actuators — zero manual intervention</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- WORK EXPERIENCE -->
+                    <div class="cv-section">
+                        <h2 class="cv-section-title">WORK EXPERIENCE</h2>
+
+                        <div class="cv-project">
+                            <div class="cv-project-header">
+                                <span class="cv-project-title">IT Technician & Network Troubleshooter</span>
+                                <span class="cv-project-date">Ongoing</span>
+                            </div>
+                            <p style="margin-bottom:.2rem"><em>Family-Owned Computer Shop, Bacolod City</em></p>
+                            <ul class="cv-list" style="margin-top:.3rem">
+                                <li>Daily hardware repair & OS troubleshooting (50+ devices serviced)</li>
+                                <li>Local network configuration & client router setup</li>
+                                <li>DNS/DHCP configuration for small business networks</li>
+                                <li>Customer technical support & diagnostics</li>
+                            </ul>
+                        </div>
+
+                        <div class="cv-project">
+                            <div class="cv-project-header">
+                                <span class="cv-project-title">Student Assistant</span>
+                                <span class="cv-project-date">2023–Present</span>
+                            </div>
+                            <p><em>Culture and Arts Office — CHMSU</em></p>
+                            <ul class="cv-list" style="margin-top:.3rem">
+                                <li>Administrative & event operations support</li>
+                                <li>Maintain full-time academic standing (15+ units/semester)</li>
+                            </ul>
+                        </div>
+
+                        <div class="cv-project">
+                            <div class="cv-project-header">
+                                <span class="cv-project-title">Thesis Commission Contractor</span>
+                                <span class="cv-project-date">2023–Present</span>
+                            </div>
+                            <p><em>Multiple Universities (CHMSU, JBL, PNU-V)</em></p>
+                            <ul class="cv-list" style="margin-top:.3rem">
+                                <li>Full embedded systems & electronics for BS Engineering thesis</li>
+                                <li>Schematic design, PCB layout, firmware development</li>
+                                <li>6+ successful commissions delivered</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- AWARDS -->
+                    <div class="cv-section">
+                        <h2 class="cv-section-title">AWARDS & HONORS</h2>
+                        <ul class="cv-list columns-2">
+                            <li>🏅 DOST-SEI Scholar (JLSS 2025) — top 6.56%</li>
+                            <li>🏅 CHED CSP Scholar — 2023–2025</li>
+                            <li>🥉 3rd Place — ICPEP C++ Programming (NIR) — 2024</li>
+                            <li>🏆 SolidWorks Competition 2025 — Finalist</li>
+                            <li>📝 Best Research Paper — STEM Senior High — 2022</li>
+                        </ul>
+                    </div>
+
+                    <!-- ADDITIONAL INFO -->
+                    <div class="cv-section" style="border-bottom:none">
+                        <h2 class="cv-section-title">ADDITIONAL INFORMATION</h2>
+                        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:.5rem">
+                            <div class="match-item">📌 English (fluent)</div>
+                            <div class="match-item">📌 Filipino (native)</div>
+                            <div class="match-item">⏳ Available for OJT/Internship/Entry Level Job</div>
+                            <div class="match-item">⚡ Self-driven & accountable</div>
+                            <div class="match-item">🎯 Handles pressure well</div>
+                            <div class="match-item">📂 Portfolio: khentdoit.github.io/khentdoit.Portfolio.io</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
 
     </div>
-  </div>
-</section>
+    <!-- end .page -->
 
-</div><!-- end .page -->
+    <footer>
+        <p>© 2026 Khent Benedict Balulot · <a href="https://github.com/khentdoit" target="_blank">github.com/khentdoit</a></p>
+        <nav class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+            <a href="cv.html">CV / Resume</a>
+        </nav>
+    </footer>
 
-<footer>
-  <p>© 2026 Khent Benedict Balulot · <a href="https://github.com/khentdoit" target="_blank">github.com/khentdoit</a></p>
-  <nav class="footer-links">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="projects.html">Projects</a>
-    <a href="contact.html">Contact</a>
-    <a href="cv.html">CV / Resume</a>   
-  </nav>
-</footer>
+    <!-- Chatbot -->
+    <button class="chat-toggle" id="chat-toggle" aria-label="Open chat">💬<span class="chat-badge" id="chat-badge"></span></button>
+    <div class="chat-window" id="chat-window">
+        <div class="chat-header">
+            <div class="chat-avatar">🤖</div>
+            <div class="chat-header-info"><h4>KB Assistant</h4><span>● Online</span></div>
+            <button class="chat-close" id="chat-close">✕</button>
+        </div>
+        <div class="chat-messages" id="chat-messages"></div>
+        <div class="chat-input-wrap">
+            <input class="chat-input" id="chat-input" type="text" placeholder="Ask me anything…" autocomplete="off" />
+            <button class="chat-send" id="chat-send">➤</button>
+        </div>
+    </div>
 
-<!-- Chatbot -->
-<button class="chat-toggle" id="chat-toggle" aria-label="Open chat">💬<span class="chat-badge" id="chat-badge"></span></button>
-<div class="chat-window" id="chat-window">
-  <div class="chat-header">
-    <div class="chat-avatar">🤖</div>
-    <div class="chat-header-info"><h4>KB Assistant</h4><span>● Online</span></div>
-    <button class="chat-close" id="chat-close">✕</button>
-  </div>
-  <div class="chat-messages" id="chat-messages"></div>
-  <div class="chat-input-wrap">
-    <input class="chat-input" id="chat-input" type="text" placeholder="Ask me anything…" autocomplete="off">
-    <button class="chat-send" id="chat-send">➤</button>
-  </div>
-</div>
+    <script src="js/transitions.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/chatbot.js"></script>
 
-<script src="js/transitions.js"></script>
-<script src="js/main.js"></script>
-<script src="js/chatbot.js"></script>
+    <script>
+        // ---- CONFIG ----
+        const portfolioUrl = "https://khentdoit.github.io/khentdoit.Portfolio.io/";
+        const resumePdfUrl = portfolioUrl + "RESUME-BALULOT-KHENT.pdf";
+        const currentUrl = window.location.href;
 
-<script>
-// Get current page URL for sharing
-const currentUrl = window.location.href;
-const portfolioUrl = "https://khentdoit.github.io/khentdoit.Portfolio.io/";
-const cvDirectUrl = currentUrl;
+        // ---- PORTFOLIO QR (existing) ----
+        document.getElementById('qrCodeImg').src =
+            `https://api.qrserver.com/v1/create-qr-code/?size=140x140&data=${encodeURIComponent(portfolioUrl)}&color=AD6E54&bgcolor=273231&margin=8`;
+        document.getElementById('qrLink').href = portfolioUrl;
+        document.getElementById('qrLink').textContent = `🔗 ${portfolioUrl.replace('https://', '')}`;
 
-// Set QR code to point to live portfolio
-document.getElementById('qrCodeImg').src = `https://api.qrserver.com/v1/create-qr-code/?size=140x140&data=${encodeURIComponent(portfolioUrl)}&color=AD6E54&bgcolor=273231&margin=8`;
-document.getElementById('qrLink').href = portfolioUrl;
-document.getElementById('qrLink').textContent = `🔗 ${portfolioUrl.replace('https://', '')}`;
-document.getElementById('directCvLink').href = cvDirectUrl;
-document.getElementById('directCvLink').textContent = `🔗 Copy CV Direct Link: ${cvDirectUrl}`;
+        // ---- CV DIRECT LINK (existing) ----
+        document.getElementById('directCvLink').href = currentUrl;
+        document.getElementById('directCvLink').textContent = `🔗 Copy CV Direct Link: ${currentUrl}`;
 
-// Copy URL to clipboard
-function copyQRUrl() {
-  navigator.clipboard.writeText(portfolioUrl);
-  alert("✅ Portfolio link copied: " + portfolioUrl);
-}
+        // ---- RESUME QR (new) ----
+        document.getElementById('resumeQrImg').src =
+            `https://api.qrserver.com/v1/create-qr-code/?size=140x140&data=${encodeURIComponent(resumePdfUrl)}&color=AD6E54&bgcolor=273231&margin=8`;
 
-// Share functions
-function shareViaEmail() {
-  window.location.href = `mailto:?subject=Khent%20Benedict%20Balulot%20-%20CV%20%26%20Portfolio&body=Check%20out%20my%20portfolio%3A%20${encodeURIComponent(portfolioUrl)}%0A%0ADirect%20CV%20link%3A%20${encodeURIComponent(cvDirectUrl)}`;
-}
+        // ---- RESUME VIEW & DOWNLOAD BUTTONS (new) ----
+        document.getElementById('resumeViewBtn').href = resumePdfUrl;
+        document.getElementById('resumeDownloadBtn').href = resumePdfUrl;
 
-function shareViaLinkedIn() {
-  window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(portfolioUrl)}`, '_blank');
-}
+        // ---- SHARE FUNCTIONS (existing) ----
+        function copyQRUrl() {
+            navigator.clipboard.writeText(portfolioUrl);
+            alert("✅ Portfolio link copied: " + portfolioUrl);
+        }
 
-function shareViaTwitter() {
-  window.open(`https://twitter.com/intent/tweet?text=Check%20out%20my%20portfolio%20and%20CV!%20Computer%20Engineering%20student%20%7C%20Network%20%26%20Linux%20Enthusiast&url=${encodeURIComponent(portfolioUrl)}`, '_blank');
-}
+        function shareViaEmail() {
+            window.location.href =
+                `mailto:?subject=Khent%20Benedict%20Balulot%20-%20CV%20%26%20Portfolio&body=Check%20out%20my%20portfolio%3A%20${encodeURIComponent(portfolioUrl)}%0A%0ADirect%20CV%20link%3A%20${encodeURIComponent(currentUrl)}`;
+        }
 
-function shareViaWhatsApp() {
-  window.open(`https://wa.me/?text=${encodeURIComponent(`Check out my portfolio: ${portfolioUrl}`)}`, '_blank');
-}
+        function shareViaLinkedIn() {
+            window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(portfolioUrl)}`, '_blank');
+        }
 
-// Also make the direct CV link copy on click
-document.getElementById('directCvLink').addEventListener('click', function(e) {
-  e.preventDefault();
-  navigator.clipboard.writeText(cvDirectUrl);
-  alert("✅ CV direct link copied: " + cvDirectUrl);
-});
-</script>
+        function shareViaTwitter() {
+            window.open(
+                `https://twitter.com/intent/tweet?text=Check%20out%20my%20portfolio%20and%20CV!%20Computer%20Engineering%20student%20%7C%20Network%20%26%20Linux%20Enthusiast&url=${encodeURIComponent(portfolioUrl)}`,
+                '_blank');
+        }
 
-<style>
-/* CV Page Styles */
-.cv-container {
-  background: var(--panel) !important;
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-}
+        function shareViaWhatsApp() {
+            window.open(`https://wa.me/?text=${encodeURIComponent(`Check out my portfolio: ${portfolioUrl}`)}`, '_blank');
+        }
 
-.cv-section {
-  border-bottom: 1px solid var(--border);
-  padding-bottom: 1.5rem;
-  margin-bottom: 1.5rem;
-}
+        // ---- CV DIRECT LINK COPY (existing) ----
+        document.getElementById('directCvLink').addEventListener('click', function(e) {
+            e.preventDefault();
+            navigator.clipboard.writeText(currentUrl);
+            alert("✅ CV direct link copied: " + currentUrl);
+        });
+    </script>
 
-.cv-section-title {
-  font-family: var(--serif);
-  font-size: 1.1rem;
-  color: var(--accent);
-  letter-spacing: 0.15em;
-  margin-bottom: 1rem;
-  padding-bottom: 0.4rem;
-  border-bottom: 2px solid var(--copper);
-  display: inline-block;
-}
+    <style>
+        /* CV Page Styles */
+        .cv-container {
+            background: var(--panel) !important;
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+        }
 
-.cv-list {
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
-}
+        .cv-section {
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
 
-.cv-list li {
-  padding: 0.25rem 0;
-  padding-left: 1.2rem;
-  position: relative;
-  color: var(--text);
-  font-size: 0.82rem;
-  line-height: 1.5;
-}
+        .cv-section-title {
+            font-family: var(--serif);
+            font-size: 1.1rem;
+            color: var(--accent);
+            letter-spacing: 0.15em;
+            margin-bottom: 1rem;
+            padding-bottom: 0.4rem;
+            border-bottom: 2px solid var(--copper);
+            display: inline-block;
+        }
 
-.cv-list li::before {
-  content: "▹";
-  position: absolute;
-  left: 0;
-  color: var(--copper);
-  font-size: 0.75rem;
-}
+        .cv-list {
+            list-style: none;
+            padding-left: 0;
+            margin: 0;
+        }
 
-.cv-list li.in-progress {
-  opacity: 0.7;
-  font-style: italic;
-}
+        .cv-list li {
+            padding: 0.25rem 0;
+            padding-left: 1.2rem;
+            position: relative;
+            color: var(--text);
+            font-size: 0.82rem;
+            line-height: 1.5;
+        }
 
-.cv-list li.in-progress::before {
-  content: "◈";
-}
+        .cv-list li::before {
+            content: "▹";
+            position: absolute;
+            left: 0;
+            color: var(--copper);
+            font-size: 0.75rem;
+        }
 
-.cv-project {
-  margin-bottom: 1rem;
-}
+        .cv-list li.in-progress {
+            opacity: 0.7;
+            font-style: italic;
+        }
 
-.cv-project-header {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-bottom: 0.2rem;
-}
+        .cv-list li.in-progress::before {
+            content: "◈";
+        }
 
-.cv-project-title {
-  font-weight: 700;
-  color: var(--accent);
-  font-size: 0.92rem;
-}
+        .cv-project {
+            margin-bottom: 1rem;
+        }
 
-.cv-project-date {
-  font-family: var(--mono);
-  font-size: 0.68rem;
-  color: var(--copper);
-}
+        .cv-project-header {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 0.2rem;
+        }
 
-.cv-project p, .cv-project .cv-list {
-  margin-top: 0.3rem;
-}
+        .cv-project-title {
+            font-weight: 700;
+            color: var(--accent);
+            font-size: 0.92rem;
+        }
 
-.columns-2 {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  gap: 0.4rem;
-}
+        .cv-project-date {
+            font-family: var(--mono);
+            font-size: 0.68rem;
+            color: var(--copper);
+        }
 
-.match-item {
-  padding: 0.4rem 0.7rem;
-  background: rgba(173,110,84,0.08);
-  border: 1px solid rgba(173,110,84,0.15);
-  border-radius: 6px;
-  font-size: 0.72rem;
-  color: var(--text);
-  text-align: center;
-}
+        .cv-project p,
+        .cv-project .cv-list {
+            margin-top: 0.3rem;
+        }
 
-.cert-item {
-  padding: 0.3rem 0;
-}
+        .columns-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            gap: 0.4rem;
+        }
 
-.share-section {
-  border-top: 1px solid var(--border);
-  padding-top: 1.5rem;
-  margin-top: 0.5rem;
-}
+        .match-item {
+            padding: 0.4rem 0.7rem;
+            background: rgba(173, 110, 84, 0.08);
+            border: 1px solid rgba(173, 110, 84, 0.15);
+            border-radius: 6px;
+            font-size: 0.72rem;
+            color: var(--text);
+            text-align: center;
+        }
 
-.share-link {
-  font-size: 0.65rem;
-  color: var(--copper);
-  text-decoration: none;
-  word-break: break-all;
-}
+        .cert-item {
+            padding: 0.3rem 0;
+        }
 
-.share-link:hover {
-  text-decoration: underline;
-}
+        .share-section {
+            border-top: 1px solid var(--border);
+            padding-top: 1.5rem;
+            margin-top: 0.5rem;
+        }
 
-.copy-btn {
-  background: none;
-  border: none;
-  color: var(--copper);
-  cursor: pointer;
-  font-size: 0.6rem;
-  font-family: var(--mono);
-}
+        .share-link {
+            font-size: 0.65rem;
+            color: var(--copper);
+            text-decoration: none;
+            word-break: break-all;
+        }
 
-.copy-btn:hover {
-  text-decoration: underline;
-}
+        .share-link:hover {
+            text-decoration: underline;
+        }
 
-.btn-small {
-  transition: all 0.2s ease;
-}
+        .copy-btn {
+            background: none;
+            border: none;
+            color: var(--copper);
+            cursor: pointer;
+            font-size: 0.6rem;
+            font-family: var(--mono);
+        }
 
-.btn-small:hover {
-  background: var(--copper) !important;
-  color: var(--bg) !important;
-  border-color: var(--copper) !important;
-}
+        .copy-btn:hover {
+            text-decoration: underline;
+        }
 
-@media print {
-  body {
-    background: white;
-    color: black;
-  }
-  .nav, footer, .chat-toggle, .chat-window, .share-section, .btn, .btn-primary, .btn-outline, .btn-small {
-    display: none !important;
-  }
-  .cv-container {
-    padding: 0 !important;
-    margin: 0 !important;
-  }
-  .cv-section-title {
-    color: #000;
-    border-bottom-color: #333;
-  }
-  .match-item {
-    border: 1px solid #ccc;
-    background: #f5f5f5;
-    color: #000;
-  }
-  .cv-list li::before {
-    color: #666;
-  }
-}
-</style>
+        .btn-small {
+            transition: all 0.2s ease;
+        }
+
+        .btn-small:hover {
+            background: var(--copper) !important;
+            color: var(--bg) !important;
+            border-color: var(--copper) !important;
+        }
+
+        @media print {
+            body {
+                background: white;
+                color: black;
+            }
+            .nav,
+            footer,
+            .chat-toggle,
+            .chat-window,
+            .share-section,
+            .btn,
+            .btn-primary,
+            .btn-outline,
+            .btn-small {
+                display: none !important;
+            }
+            .cv-container {
+                padding: 0 !important;
+                margin: 0 !important;
+            }
+            .cv-section-title {
+                color: #000;
+                border-bottom-color: #333;
+            }
+            .match-item {
+                border: 1px solid #ccc;
+                background: #f5f5f5;
+                color: #000;
+            }
+            .cv-list li::before {
+                color: #666;
+            }
+        }
+    </style>
 
 </body>
 </html>
